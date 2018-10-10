@@ -1,15 +1,9 @@
 <p>
 	<label class="q">*Location</label>
 	<br>
-		<?
-			if( $title == "View Recipients (Office)" ){
-		?>
-			<select name="location" onchange='this.form.submit()'>
-		<? }
-		else {
-			?>
+
 			<select name="location" required>
-		<? } ?>
+
 		<option value="" disabled selected>Select a Location</option>
 		<option value="Irvine">Irvine</option>
 		<option value="Carlsbad">Carlsbad</option>
