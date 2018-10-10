@@ -39,7 +39,7 @@
 							<input type='text' name='email2' id='email2'>
 						</p>
 
-						<?php include "/include/locations.php"; ?>
+						<?php include "include/locations.php"; ?>
 
 					</div>
 					<div>
