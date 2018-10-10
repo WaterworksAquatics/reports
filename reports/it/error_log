@@ -1,0 +1,5 @@
+[23-May-2017 12:47:42 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 46
+[23-May-2017 12:48:06 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 46
+[23-May-2017 12:48:33 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 46
+[23-May-2017 12:55:39 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 46
+[20-Aug-2018 14:32:40 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/waterworks/public_html/reports/reports/it/daily.php on line 62

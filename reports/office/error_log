@@ -1,0 +1,6 @@
+[12-Mar-2018 16:11:51 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/waterworks/public_html/reports/reports/office/feedback_srvy.php on line 123
+[12-Mar-2018 16:12:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/waterworks/public_html/reports/reports/office/feedback_srvy.php on line 245
+[13-Mar-2018 20:17:18 UTC] PHP Parse error:  syntax error, unexpected 'location' (T_STRING), expecting ',' or ';' in /home/waterworks/public_html/reports/reports/office/party_leads.php on line 74
+[24-Apr-2018 13:35:25 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/waterworks/public_html/reports/reports/office/Qweek.php on line 187
+[24-Apr-2018 13:35:51 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/waterworks/public_html/reports/reports/office/Qweek.php on line 187
+[15-Aug-2018 17:07:56 UTC] PHP Parse error:  syntax error, unexpected '$url' (T_VARIABLE), expecting ',' or ';' in /home/waterworks/public_html/reports/reports/office/view.php on line 129

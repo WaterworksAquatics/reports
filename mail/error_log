@@ -1,0 +1,2 @@
+[19-May-2017 15:40:03 UTC] PHP Warning:  fwrite() expects parameter 2 to be string, object given in /home/waterworks/public_html/mail/sendMail.php on line 43
+[19-May-2017 15:41:22 UTC] PHP Parse error:  syntax error, unexpected '$mail' (T_VARIABLE) in /home/waterworks/public_html/mail/sendMail.php on line 15

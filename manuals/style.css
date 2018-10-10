@@ -1,0 +1,705 @@
+/** asap **/
+@font-face {
+	font-family: asap;
+	src: url(fonts/asap/Asap-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: asap;
+	src: url(fonts/asap/Asap-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: asap;
+	src: url(fonts/asap/Asap-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: asap;
+	src: url(fonts/asap/Asap-BoldItalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
+
+html {
+	font-family: asap;
+	color: black;
+	font-size: 12pt;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/** ::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+} **/
+
+body {
+	background: #D6D6D6;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+	h1 {
+		font-size: 24pt;
+		color: #598CB9;
+	}
+
+	h2 {
+		font-size: 18pt;
+		color: #9A9A9A;
+	}
+	
+	h3 {
+		font-size: 14pt;
+	}
+	
+	h4 {
+		font-size: 12pt;
+		color: #9A9A9A;
+	}
+	
+	a:hover h1, a:hover h2, a:hover h3,
+	a:hover h4, a:hover h5 {
+		font-style: normal !important;
+		color: black;
+	}
+
+p {
+	clear: both;
+	margin-top: 2px;
+}
+
+/* For Printing */
+@media print {
+	.noprint {
+		display:none;
+	}
+	
+	content {
+		box-shadow: none;
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 0px;
+		width: 100%;
+	}
+}
+
+/** Header **/
+	header {
+		background: #47A1FF;
+		height: 85px;
+		color: white;
+		font-size:14pt;
+	}
+	
+		header a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		header a:hover {
+			color: #003D71;
+		}
+	
+		header > div {
+			display: table;
+			height: 100%;
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 100%;
+		}
+			
+			header > div div {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+				header > div #logo img {
+					max-width: 350px;
+					margin-left: 10px;
+				}
+				
+				header > div #menu {
+					text-align: right;
+					padding-right: 10px;
+				}
+		
+	/** Content**/
+	#content {
+		background: white;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+		height: auto;
+		margin: 10px auto;
+		max-width: 975px;
+		min-height: 450px;
+		overflow: auto;
+		padding: 30px;
+		width: 100%;
+	}
+	
+		#content a:hover {
+			font-style: italic;
+			font-weight: normal;
+		}
+		
+		.col {
+			width: 50%;
+			float: left;
+		}
+		
+		.wide {
+			width: 100% !important;
+		}
+		
+	fieldset {
+		border: 1px solid;
+		border-color: rgb(179, 179, 179);
+		margin-bottom: 10px;
+	}
+	
+		fieldset.row1 > div:first-child {
+			width: 100%;
+			float: none;
+		}
+		
+		fieldset.row1 > div:not(first-child) {
+			width: 50%;
+			float: left;
+		}
+			
+			fieldset.row1 > div:not(first-child) textarea {
+				width: 100%;
+			}
+		
+		fieldset legend {
+			color: rgb(87, 154, 224);
+			font-weight: bold;
+			font-size: 15pt;
+		}
+		
+	label {
+		font-size: 10pt;
+		font-weight: bold;
+		color: rgb(142, 142, 142);
+	}
+	
+	label.q {
+		color: rgb(38, 125, 177);
+	}
+	
+	input, select {
+		border: 3px solid;
+		border-color: rgb(210, 208, 208);
+		padding: 5px;
+		margin-top: 5px;
+		font-family: inherit;
+	}
+	
+	#datepicker {
+		text-align: center;
+	}
+	
+	select {
+		width: 175px;
+	}
+		
+		select.dd-short {
+			width: 75px;
+			margin-left: 5px;
+		}
+	
+	input:focus, input[type=text]:focus,
+	textarea:focus, select:focus {
+		border: 3px solid;
+		border-color: rgb(136, 177, 212);
+		padding: 10px;
+	}
+
+		input[type=text] {
+			border: 3px solid;
+			border-color: rgb(210, 208, 208);
+			width: 175px;
+			padding: 5px;
+			margin-top: 5px;
+		}
+			
+			input[type=text]#email1 {
+				text-align: right;
+			}
+				
+			input[type=text].question {
+				width: 390px;
+			}
+		
+			input[type=text].question {
+				width: 390px;
+			}
+		
+		input[type=submit], input[type=button], button {
+			border: none;
+			width: 125px;
+			padding: 3px;
+			color: white;
+			background-color: rgb(87, 154, 224);
+		}
+		
+			input[type=submit]:hover, input[type=button]:hover, button:hover {
+				border: 1px solid;
+				border-color: rgb(87, 154, 224);
+				padding: 2px;
+				color: rgb(87, 154, 224);
+				background-color: white;
+			}
+		
+			
+		input[type=submit].sending {
+			-webkit-animation: send 3s infinite;
+			animation: send 3s infinite;
+		}
+		
+		@-webkit-keyframes send {
+			0%   {
+				background-color: rgb(87, 154, 224);
+				color: white;
+			}
+			75%  {
+				background-color: white;
+				color: rgb(87, 154, 224);
+			}
+		}
+
+		/* Standard syntax */
+		@keyframes send {
+			0%   {
+				background-color: rgb(87, 154, 224);
+				color: white;
+			}
+			50%  {
+				background-color: white;
+				color: rgb(87, 154, 224);
+			}
+		}
+			
+	textarea {
+		border: 3px solid;
+		border-color: rgb(210, 208, 208);
+		padding: 5px;
+		margin-top: 5px;
+		width: 50%;
+		font-family: inherit;
+	}
+	
+	.indent {
+		margin-left: 40px;
+	}
+	
+	.loc {
+			display:none;
+		}
+
+	.ques {
+		clear: both;
+		padding-top: 10px;
+	}
+
+	.rdo {
+		float: left;
+		width: 40%;
+		max-width: 100%;
+		padding: 25px 0;
+		text-align: center;
+	}
+
+	.rdo-cmnt {
+		float: left;
+		width: 60%;
+		max-width: 100%;
+	}
+
+		.rdo-cmnt textarea {
+			width: 70%;
+		}
+
+	#agree {
+		
+		text-align: center;
+		display: table;
+		table-layout: fixed;
+		border-collapse: collapse;
+	}
+
+		#agree > div {
+			display: table-cell;
+			border:	1px	solid;
+			padding: 10px 20px;
+			width: 20%;
+		}
+		
+	/** Confirmation Page **/	
+	#success {
+		display: table;
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	
+	#success div {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	/** Suit Request - M v F **/
+	#ack p {
+		float: left;
+		max-width: 92%;
+		clear: none;
+		text-align: justify;
+	}
+	
+		#acknowledge {
+			width: 30px;
+			float: left;
+			margin: 10px;
+		}
+	
+	#submit:disabled, .disabled {
+		background-color: rgb(164, 208, 255) !important;
+		border: none !important;
+		color: white !important;
+		padding: 3px !important;
+	}
+	
+	.male, .female {
+		border-collapse: collapse;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		table-layout: fixed;
+	}
+		
+		.male tr:first-child,
+		.male tr td:first-child,
+		.female tr:first-child,
+		.female tr td:first-child {
+			font-weight: bold;
+		}
+		
+		.male tr:first-child {
+			background: rgb(123, 170, 255);
+		}
+		
+		.female tr:first-child {
+			background: rgb(255, 192, 203)
+		}
+		
+			.male td, .female td {
+				border: 1px solid;
+				height: 25px;
+			}
+	
+	#size, #sizechart, #chart, #type {
+		display: none;
+	}
+	
+		#size select, #type select {
+			width: 100px;
+		}
+	
+	#redirect {
+		background: #FE961A;
+		box-shadow: 2px 2px 6px black;
+		color: white;
+		font-weight: bold;
+		font-size: 15pt !important;
+		line-height: 25px;
+		margin: auto;
+		padding: 15px;
+		text-align: center;
+		text-shadow: 2px 2px 4px black;
+		width: 230px;
+		height: 60px;
+	}
+	
+	#help {
+		clear: both;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#help a {
+		text-decoration: none;
+		font-weight: bold;
+		color: rgb(87, 154, 224)
+	}
+	
+	/**   Issue/Request Tab   **/
+	
+	#tabs-toggle {
+		width: 35px;
+		height: 150px;
+		border: 1px solid rgb(49, 101, 149);
+		border-radius: 10px 0 0 10px;
+		margin: auto;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 40px;				
+		z-index: 0;
+		background: white;
+		background-image: url('images/arrowRound-close_blue.png');
+		background-repeat: no-repeat;
+		background-position: 25% 50%;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		z-index: 1;
+	}
+	
+	#tabs-toggle:hover {
+		width: 37px;
+		height: 152px;
+		border: none;
+		background: rgb(71, 161, 255);
+		background-image: url('images/arrowRound-close_white.png');
+		background-repeat: no-repeat;
+		background-position: 25% 50%;
+	}
+	
+	#tabs-toggle:active {
+		width: 35px;
+		height: 150px;
+		border: 1px solid rgb(49, 101, 149);
+		background: rgb(154, 154, 154);
+		background-image: url('images/arrowRound-close_blue.png');
+		background-repeat: no-repeat;
+		background-position: 25% 50%;
+	}
+	
+	.tabs-toggle-open {
+		right: -10px !important;
+		background-image: url('images/arrowRound-open_blue.png') !important;
+	}
+	
+	.tabs-toggle-open:hover {
+		background-image: url('images/arrowRound-open_white.png') !important;
+	}
+	
+	.tabs-toggle-open:active {
+		background-image: url('images/arrowRound-open_blue.png') !important;
+	}
+
+	#tabs {
+		width: 152px;
+		font-weight: bold;
+		transform: rotate(270deg);
+		position: fixed;
+		top: 50%;
+		bottom: 50%;
+		right: -4px;
+		z-index: 2;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	
+		#tabs > div {
+			position: relative;
+			top: 22px;
+			width: 75px;
+			height: 45px;
+			background: rgb(49, 101, 149);
+			float: left;
+			text-align: center;
+			padding-top: 6px;
+			color: white;
+		}
+	
+		#tabs > div:hover {
+			width: 73px;
+			height: 43px;
+			color: rgb(49, 101, 149);
+			background: white;
+			border: 1px solid rgb(49, 101, 149);
+			padding-left: 1px;
+		}
+		
+		#tabs > div:active {
+			width: 73px;
+			color: white;
+			background: rgb(71, 161, 255);
+			border: 1px solid rgb(71, 161, 255);
+		}
+	
+			#report {
+				border-radius: 0px 10px 0px 0px;
+				border-left: 1px solid white;
+			}
+			
+			#request {
+				border-radius: 10px 0px 0px 0px;
+				border-right: 1px solid white;
+			}
+			
+	.tabs-closed {
+		right: -54px !important;
+	}			
+	
+	.tab-list {
+		border: 1px solid rgb(49, 101, 149);
+		border-radius: 10px 0 0 10px;
+		background: white;
+		width: 180px;
+		height: 150px;
+		margin: auto;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: -200px;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+		z-index: 1;
+	}
+	
+		.tab-list ul {
+			list-style: none;
+			margin: 0;
+			padding: 10px 0 0 20px;
+		}
+		
+			.tab-list ul li:not(:first-child) {
+				line-height: 25px;
+				border-bottom: 1px solid rgb(154, 154, 154);				
+			}
+			
+			.tab-list ul li:last-child {
+				border-bottom: none;
+			}
+	
+	.list-toggle {
+		right: 40px;
+	}
+	
+	/**   Plugins    **/
+	
+		/**   Datepicker   **/	
+		.ui-datepicker {
+			font-family: inherit !important;
+		}
+		.ui-datepicker-title {
+			color: white !important;
+		}
+		.ui-widget-header {
+			background: #47A1FF !important;
+		}
+	
+	
+@media screen and (max-width: 1050px) {
+		#content {
+			width: initial;
+		)
+}
+	
+@media screen and (max-width: 800px) {
+	
+	h1 {
+		font-size: 18pt;
+		text-align: center;
+	}
+	
+	#content {
+		padding: 1%;
+		width: 95%;
+	}
+	
+		header {
+			height: 100%;
+		}
+		
+			header > div {
+				display: block;
+				height: initial;
+				text-align: center;
+			}
+				
+				header > div div {
+					display: initial;
+				}
+				
+					header > div #logo img {
+						width: 80%;
+						margin: 10px auto;
+					}
+					
+					header > div #menu {
+						text-align: center;
+						padding: 0;
+					}	
+		
+		.col {
+			margin: 0 10px;
+			width: 95%;
+			float: none;
+		}
+			
+			.wide {
+				width: 50% !important;
+				float: left !important;
+				margin: 0 !important;
+			}
+				
+				.wide select {
+					width: 80% !important;
+				}
+				
+		textarea {
+			width: 95% !important;
+		}
+		
+		fieldset.row1 > div:not(first-child) {
+			clear: both;
+			width: initial;
+		}
+		
+	/** Confirmation Page **/	
+	#success {
+		display: block !important;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+		#success div {
+			display: block !important;
+			width: 100%;
+			text-align: center;
+		}
+		
+			#success div > img {	
+				max-width: 50%;
+			}
+			
+}

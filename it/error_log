@@ -1,0 +1,8 @@
+[08-Aug-2018 15:40:45 UTC] PHP Parse error:  syntax error, unexpected 'htmlspecialchars' (T_STRING), expecting '(' in /home/waterworks/public_html/reports/it/generate-bios.php on line 47
+[08-Aug-2018 15:41:07 UTC] PHP Warning:  include(include/locations.php): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/it/generate-bios.php on line 41
+[08-Aug-2018 15:41:07 UTC] PHP Warning:  include(): Failed opening 'include/locations.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/waterworks/public_html/reports/it/generate-bios.php on line 41
+[08-Aug-2018 15:56:12 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/waterworks/public_html/reports/it/generate-bios.php on line 19
+[08-Aug-2018 19:21:31 UTC] PHP Parse error:  syntax error, unexpected '$instD' (T_VARIABLE) in /home/waterworks/public_html/reports/it/generate-bios.php on line 89
+[08-Aug-2018 19:47:16 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/waterworks/public_html/reports/it/generate-bios.php on line 178
+[08-Aug-2018 20:07:09 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/waterworks/public_html/reports/it/generate-bios.php on line 116
+[09-Aug-2018 17:51:08 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/waterworks/public_html/reports/it/generate-bios.php on line 172

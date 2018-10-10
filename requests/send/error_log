@@ -1,0 +1,2 @@
+[29-Jul-2018 18:09:50 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 46
+[11-Sep-2018 15:02:21 America/Los_Angeles] PHP Warning:  fopen(log/Email_error_log.txt): failed to open stream: No such file or directory in /home/waterworks/public_html/reports/mail/sendMail.php on line 48

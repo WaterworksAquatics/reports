@@ -1,0 +1,401 @@
+<?php
+header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
+header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
+
+	$mailSend = $_SERVER['DOCUMENT_ROOT'];
+	$mailSend .= "/mail/sendMail.php";
+	require $mailSend;
+
+	// Form Responses
+	session_start();
+
+	date_default_timezone_set('America/Los_Angeles');
+	$date = date('M. j, Y');
+	$time = date('g:ia');
+	$parts = array();
+	$url = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH);
+	$survey = $_SESSION['survey'];
+
+	//Specific variables
+	$location = $_REQUEST['location'];
+	$yourLocation = $_REQUEST['yourLocation'];
+	$name = $_REQUEST['name'];
+	$email2 = $_REQUEST['email2'];
+	//$pub = $_SESSION['pub'];
+	$counter = 0;
+
+	// Testing Parameter for "Name" field
+	$test = array( "test", "Test", "TEST");
+
+	//For "a" v. "an"
+	$array = array('A', 'E', 'I', 'O', 'U');
+
+	// Compile Questions
+	for($i = 0; $i < count($_SESSION["questions"]); $i++){
+
+		$questions[$i] = $_SESSION["questions"][$i];
+
+		$type[$i] = $_SESSION["type"][$i];
+
+		if(isset($_POST['answer'][$i])){
+			$answer[$i] = $_POST['answer'][$i];
+		}
+			else{
+				$answer[$i] = "";
+			}
+
+		if(isset($_POST['comments'][$i])){
+			$comments[$i] = $_POST['comments'][$i];
+		}
+
+		//outputs date questions
+		elseif($i == 8){
+			$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td><td><b>' . $dayweek . '</b></td></tr>';
+		}
+		else{
+			$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td><td><b>' .$answer[$i]. '</b></td></tr>';
+		}
+
+		if ($type[$i] == 1 && $i != 4){
+			$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td><td><b>' . $answer[$i]. '</b></td></tr>
+						<tr><td><b><dd>' .$comments[$i]. '</dd></b></td></tr>';
+		}
+
+			elseif ($type[$i] == 2 || $type[$i] == 14){
+				$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td><td><b>' . $answer[$i]. '</b></td></tr>
+						<tr><td><b><dd>' .$comments[$i]. '</dd></b></td></tr>';
+			}
+
+			elseif ($type[$i] == 4){
+				$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td></tr>
+							<tr><td><b><dd>' .$comments[$i]. '</dd></b><br /></td></tr>';
+			}
+
+		elseif ($type[$i] == 12){
+			$parts[$i] = '<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' .$questions[$i]. '</td><td><b>' . $answer[$i]. '</b></td></tr>';
+		}
+		elseif ($type[$i] == 13) {
+
+			if ($survey == "Report Customer Concern"){
+				$parts[$i] = '<tr><td>' .$questions[$i]. '<br></td><td><b>' .$answer[$i]. '</b></td></tr>';
+			}
+
+			else {
+				$parts[$i] = '<tr><td style="padding-left: 25px;">' .$questions[$i]. '<br></td></tr><tr><td style="padding-left: 25px;"><b><dd>' .$comments[$i]. '</dd></b><br /></td></tr>';
+			}
+		}
+	}
+
+	// Switch question 1 & 2 in email
+	if ( in_array( $survey , array( "Aquatics Manager Daily Report", "Senior Instructor Daily Report", "Quality Manager Daily Report", "Lead Trainer Report", "Site Manager Report" ) ) ){
+		$t = $parts[0];
+		$parts[0] = $parts[1];
+		$parts[1] = $t;
+	}
+
+	// Email Content
+	$top = '<html>
+				<body style="max-width:1000px;">
+					<table style="max-width: 700px; margin: 0 auto;" border="0">
+						<tr>
+							<td colspan="2"><center><b><font size="3">';
+
+							// Survey name changes if Customer Concern
+							if ( $survey == "Report Customer Concern" ){
+	$top .=						$location . ' Customer Concern';
+							}
+							else {
+	$top .=						$survey;
+							}
+
+	$top .=					'</font></b></center></td>
+						</tr>
+						<tr>
+							<td colspan="2"><center><b><font size="3">' .$name. '</font></b></center></td>
+						</tr>';
+
+						// Include email address if field filled
+						if ( !empty( $email2 ) ){
+	$top .=					'<tr>
+								<td colspan="2"><center><b><font size="3">' .$email2. '</font></center></td>
+							</tr>';
+						}
+
+						// For customer concern report
+						if ( !empty( $yourLocation ) ){
+	$top .=					'<tr>
+								<td colspan="2"><center><b><font size="3">' .$yourLocation. '</font></center></td>
+							</tr>';
+						}
+						else {
+	$top .=				'<tr>
+							<td colspan="2"><center><b><font size="3">' .$location. '</font></center></td>
+						</tr>';
+						}
+	$top .= 			'<tr>
+							<td colspan="2"><center><b><font size="3">' .$date . ' @ ' . $time . '</font></b></center></td>
+						</tr>
+						<br />';
+
+	if ( $survey == "Pool Chemistry Report" ){
+		$pool = $_REQUEST['pool'];
+		$top = $top . '<tr>
+							<td colspan="2"><center>Pool:&nbsp; <b>' .$pool. '</b></center></td>
+						</tr>';
+	}
+	if( in_array( $survey, array( "First Day Shadow Survey", "New Applicant Survey: Play Area Interactions" ) ) ){
+		$name_app = $_REQUEST['name_app'];
+		$top = $top . '<tr>
+							<td colspan="2"><center>Applicant Name:&nbsp; <b>' .$name_app. '</b></center></td>
+						</tr>';
+	}
+
+	//Closes the HTML email
+	$bottom = '			</table>
+					<div style="font-size: 7pt; text-align: center;">' .$survey. ' submitted </div>
+				</body>
+			</html>';
+
+	//breaks $parts array into $parts string
+	$partsFinal = implode('', $parts);
+
+	//Adds $top $parts and $bottom
+	$bodyFinal = array($top, $partsFinal, $bottom);
+
+	//Breaks $body array into $body String
+	$body = implode('',$bodyFinal);
+
+	// End compile
+
+	// reCAPTCHA
+	$secret = "6LdARgkTAAAAAKYVAscvAEz5qqF-dRqHF7AP3dMr";
+	$remoteip = $_SERVER['REMOTE_ADDR'];
+
+	// Check reCAPTCHA when submitted
+	if( isset( $_POST['g-recaptcha-response'] ) ) {
+	  $response = $_POST['g-recaptcha-response'];
+	}
+
+		// Failed - reCAPTCHA not checked
+		if( !$response ) {
+?>
+
+			<script>
+				alert( "Please check the reCAPTCHA box." );
+				history.go( -1 );
+			</script>
+
+<?php
+
+		}
+
+		// Success - reCAPTCHA checked
+		// Authenticate reCAPTCHA
+		$verify = file_get_contents( "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}&remoteip{$remoteip}" );
+		$captcha_success = json_decode($verify);
+
+		// Successful Authentication
+//		if( $captcha_success->success==true ) {
+
+			// Check for empty variables ( For bad form submission. )
+			if ( empty( $survey ) || empty( $location ) ) {
+?>
+				<script language=javascript>
+					alert( "Sorry! Something seems to be missing. Please re-submit." );
+					history.go( -1 );
+				</script>
+
+<?php
+			}
+
+			// Form not missing variables - Send Email
+			else {
+
+				// Send
+				// Test Submissions
+				if ( in_array( $name, $test ) ) {
+					$to = "jonny@maintenance.waterworksswim.com";
+				}
+
+				// Normal Submissions
+				else {
+					include ("fetch.php");
+				}
+
+				// From
+				$email = "AquaticsReports@waterworksswim.com";
+
+				//Subject of the email "A vs An"
+				if ( $survey ==  "Report Customer Concern" ){
+						$subject = "[Customer Concern] $location $answer[0] - $date @ $time";
+				}
+				else {
+					$subject = "$location: ";
+					if ( in_array( $survey[0], $array ) ) {
+						$subject .= "An ";
+					}
+					else {
+						$subject .= "A ";
+					}
+					$subject .= " $survey has been submitted by $name - $date";
+				}
+
+				$headers =  "From: $email\r\n" .
+							"MIME-Version: 1.0\r\n" .
+							"Content-type: text/html; charset=iso-8859-1\r\n";
+
+				//Sends email
+				//$sent = mail($to, $subject, $body, $headers);
+				$sent = emailPrepSend($to, $email, $body, $subject);
+
+				if( $sent ){
+
+					// Email address filled, copy and confirmation
+					if( !empty( $email2 ) ){
+						$to2 = $email2;
+						$headers =  "From: $email\n" .
+									"MIME-Version: 1.0\n" .
+									"Content-type: text/html; charset=iso-8859-1";
+						// Uses "a" v. "an" array at top
+						$subject = "Confirmation: You submitted ";
+						if ( in_array( $survey[0], $array ) ) {
+							$subject .= "an ";
+						}
+						else{
+							$subject .= "a ";
+						}
+						$subject .= "$survey on $date";
+						//$sent = mail($to, $subject, $body, $headers);
+						$sent1 = emailPrepSend($to2, $email, $body, $subject);
+					}
+
+					if ( in_array( $name, $test ) ) {
+?>
+						<script language=javascript>
+							alert( "Test submitted to Jonny." );
+						</script>
+
+<?php
+					}
+
+					/*$recorded = array( "Hayward", "20th Avenue", "West Covina", "Yorba Linda", "Sunnyvale", "Almaden", "Anaheim Hills", "Culver City");
+
+					if ( !in_array( $recorded ) ) {
+
+						// Log IP Addresses
+						if ( !empty( $pub ) ){
+
+							$nl = "\n<br>\n";
+							$pB = "<p>\n";
+							$pE = "\n</p>\n";
+							$message = "IP Address recorded for $location: <b>$pub</b>";
+							$log = ( $_SERVER['DOCUMENT_ROOT']."/it/ip_log.php" );
+							$logHandle = fopen("$log", 'a') or die ("cannot create log");
+								fwrite( $logHandle, $pB .
+									$message . $nl .
+									$date . " @ " . $time .
+									$pE
+								);
+							fclose($logHandle);
+
+						}
+
+						$submitted = date( 'Hi' );
+						$day = date( 'D' );
+						if ( ( $day == "Fri" ) && ( $submitted > 1900 ) && ( $submitted < 1930 ) ){
+
+							if ( $counter == 0 ){
+
+								$to = "jonny@waterworksswim.com, victor@waterworksswim.com";
+								$headers =  "From: $email\n" .
+											"MIME-Version: 1.0\n" .
+											"Content-type: text/html; charset=iso-8859-1";
+								$subject = "[LA Fitness/City Sports] Check Logged Addresses";
+								$body = '<html><body>
+											<p>
+												<a href="http://reports.waterworksswim.com/it/ip_logged.php">IP Addresses Logged</a>
+											</p>
+										</body></html>';
+								$notify = emailPrepSend( $to, $email, $body, $subject);
+
+								$counter++;
+
+							}
+						}
+					}*/
+
+					if ( strpos( $survey, 'Survey' ) !== FALSE ){
+						echo("<script>location.href = '/confirm_survey.php?url=".$url."';</script>");
+					}
+					else {
+						echo( "<script>location.href = '/confirm_report.php?url=".$url."';</script>" );
+					}
+
+					session_destroy();
+					exit;
+
+				}
+				else{
+
+					$space = "\n";
+					$ext = "_error_log.txt";
+					$log = $site . '' . $ext;
+					$logHandle = fopen("log/$log", 'a') or die ("cannot create log");
+						$message = "$name encountered an error while trying to submit a $survey";
+						fwrite($logHandle, $message);
+						$ip = $_SERVER['REMOTE_ADDR'];
+						fwrite($logHandle, $ip);
+						fwrite($logHandle, $space);
+						$time = date("m/d/y : H:i:s", time()) ;
+						fwrite($logHandle, $time);
+						fwrite($logHandle, $space);
+						fwrite($logHandle, $space);
+					fclose($logHandle);
+					$name = $_POST['name'];
+					$name = str_replace(' ', '',$name);
+					$ext2 = ".html";
+					$file = $name.$ext2;
+					$logHandle = fopen("error/$file", 'a') or die ("cannot create log");
+
+						$ip = $_SERVER['REMOTE_ADDR'];
+						fwrite( $logHandle, $ip );
+						fwrite( $logHandle, $space );
+						$time = date( "m/d/y : H:i:s", time( ) ) ;
+						fwrite( $logHandle, $time );
+						fwrite( $logHandle, $space );
+						fwrite( $logHandle, "Response Code" );
+						fwrite( $logHandle, $space );
+						fwrite( $logHandle, $captcha_success->success );
+						fwrite( $logHandle, $space );
+						fwrite( $logHandle, $body );
+						fwrite( $logHandle, $space );
+
+					fclose($logHandle);
+
+					$address = "http://reports.waterworksswim.com/reports/aquatics/error/";
+					$link = $address.$file;
+
+					$to="victor@waterworksswim.com, jonny@maintenance.waterworksswim.com";
+
+					$subject = "$name encountered an error submitting $survey";
+					$message = "$name encountered an error while submitting a $survey. The report/survey has been saved and can be viewed by clicking on the following link. \n \"$link\"";
+					$from = "AquaticReportError@waterworksswim.com";
+					$headers = "From:" . $from;
+					//mail($to,$subject,$message,$headers);
+					emailPrepSend($to,$subject,$message,$headers);
+
+		?>
+						<script language=javascript>
+							alert("We encountered an error with our email server.  However, your document has been saved and submitted to management. We apologize for the inconvenience.");
+							window.location = "http://www.waterworksswim.com/"
+						</script>
+		<?php
+				}
+			}
+//		}
+
+
+	session_destroy();
+	exit;
+
+?>
