@@ -136,7 +136,7 @@ if ( $survey != "Report Party Leads" ){
 	// End compile
 
 	// reCAPTCHA
-	$secret = "6Lc0ZhoTAAAAAAWB5j48fcyEg8G9Q4b70sKzzl4N";
+	$secret = "6LfW_wMTAAAAAJNvB56K4zfKe-bbeDE6dAzsHuw8";
 	$remoteip = $_SERVER['REMOTE_ADDR'];
 
 	// Check reCAPTCHA when submitted
