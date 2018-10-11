@@ -2,12 +2,12 @@
 
 	session_start();
 	session_unset();
-
+	$rootDir = $_SERVER['DOCUMENT_ROOT'];
 	$survey = "Operations Manager Daily Report";
 	$_SESSION['survey'] = $survey;
 	$_SESSION['email'] = $email;
 	$title = $survey;
-	$process = "send.php";
+	$process = $rootDir."reports/office/send.php";
 
 ?>
 <!DOCTYPE html>
