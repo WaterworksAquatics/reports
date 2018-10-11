@@ -1,4 +1,19 @@
 <?php
+
+function showAlert($message){
+	?>
+		<script language=javascript>
+			alert( <?php echo $message?> );
+			history.go( -1 );
+		</script>
+
+	<?php
+}
+function recordToLog($message){
+	echo '<script>console.log("'.$message.'"")</script>';
+}
+
+
 	recordToLog("loaded send.php");
 
 	header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
@@ -333,18 +348,7 @@
 //		}
 
 
-function showAlert($message){
-	?>
-		<script language=javascript>
-			alert( <?php echo $message?> );
-			history.go( -1 );
-		</script>
 
-	<?php
-}
-function recordToLog($message){
-	echo '<script>console.log("'.$message.'"")</script>';
-}
 
 	session_destroy();
 	exit;
