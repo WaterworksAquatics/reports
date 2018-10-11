@@ -7,7 +7,7 @@
 	$_SESSION['survey'] = $survey;
 	$_SESSION['email'] = $email;
 	$title = $survey;
-	$process = $rootDir."reports/office/send.php";
+	$process = "https://reports.waterworksswim.com/reports/office/send.php";
 
 ?>
 <!DOCTYPE html>
