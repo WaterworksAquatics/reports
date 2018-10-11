@@ -8,10 +8,10 @@ function emailPrepSend($to, $from, $body, $subject, $name='Waterworks Aquatics')
 	//$mail->SMTPDebug = 2;
 
 	$mail->isSMTP();                                     	// Set mailer to use SMTP
-	$mail->Host = 'smtp-relay.gmail.com';  					// Specify main and backup SMTP servers
+	$mail->Host = 'smtp.sendgrid.net';  					// Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               	// Enable SMTP authentication
-	$mail->Username = 'debug@waterworksswim.com';           // SMTP username
-	$mail->Password = 'mamaSita321';                        // SMTP password
+	$mail->Username = 'apikey';           // SMTP username
+	$mail->Password = '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';                        // SMTP password
 	$mail->SMTPSecure = 'tls';                            	// Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    	// TCP port to connect to
 
