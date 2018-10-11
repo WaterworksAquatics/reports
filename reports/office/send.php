@@ -93,28 +93,27 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 	$top = '<html>
 			<body style="max-width: 650px; margin: 0 auto;">
 				<p style="text-align: center; font-weight: bold"><span style="color: #316595;">' . $survey . '</span><br>';
-if ( $survey != "Report Party Leads" ){
-	$top .=			$location . '<br>';
-}
-	$top .= 			$date . ' @ ' . $time .'<br>
-			 		Name: ' . $name . '<br>';
+	if ( $survey != "Report Party Leads" ){
+		$top .=			$location . '<br>';
+	}
+	$top .= $date . ' @ ' . $time .'<br>Name: ' . $name . '<br>';
 
-		// Adds UID to the body of the email
-		if( $survey == "Peer to Peer" ) {
-			$top2 = 'User ID: <b>' .$uid. '</b><br>';
-			if( $_SESSION['dept'] == "O" ) {
-				$top2 .= 'Department: <b>Office</b><br>';
-			}
-			elseif( $_SESSION['dept'] == "A" ) {
-				$top2 .= 'Department:&nbsp; <b>Aquatics</b><br>';
-			}
-			$top = $top . $top2;
+	// Adds UID to the body of the email
+	if( $survey == "Peer to Peer" ) {
+		$top2 = 'User ID: <b>' .$uid. '</b><br>';
+		if( $_SESSION['dept'] == "O" ) {
+			$top2 .= 'Department: <b>Office</b><br>';
 		}
-		// Add question of the Week or feedback survey department
-		elseif( in_array( $survey, array( "Question of the Week", "Feedback Survey" ) ) ) {
-			$top2 = '<tr><td colspan="2" style="text-align: center;">Department:&nbsp; <b>' .$department. '</b></td></tr>';
-			$top = $top . $top2;
+		elseif( $_SESSION['dept'] == "A" ) {
+			$top2 .= 'Department:&nbsp; <b>Aquatics</b><br>';
 		}
+		$top = $top . $top2;
+	}
+	// Add question of the Week or feedback survey department
+	elseif( in_array( $survey, array( "Question of the Week", "Feedback Survey" ) ) ) {
+		$top2 = '<tr><td colspan="2" style="text-align: center;">Department:&nbsp; <b>' .$department. '</b></td></tr>';
+		$top = $top . $top2;
+	}
 
 	$top .= '</p>';
 
@@ -142,37 +141,32 @@ if ( $survey != "Report Party Leads" ){
 	// Check reCAPTCHA when submitted
 	if( isset( $_POST['g-recaptcha-response'] ) ) {
 	  $response = $_POST['g-recaptcha-response'];
+	  echo '<script>console.log("reCAPTCHA CHECKED!")</script>';
 	}
 
-		// Failed - reCAPTCHA not checked
-		if( !$response ) {
-?>
-
+	// Failed - reCAPTCHA not checked
+	if( !$response ) {
+		?>
 			<script>
 				alert( "Please check the reCAPTCHA box." );
 				history.go( -1 );
 			</script>
 
-<?php
+		<?php
 
 		}
 
-		// Success - reCAPTCHA checked
-		// Authenticate reCAPTCHA
-		$verify = file_get_contents( "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}&remoteip{$remoteip}" );
-		$captcha_success = json_decode($verify);
+	// Success - reCAPTCHA checked
+	// Authenticate reCAPTCHA
+	$verify = file_get_contents( "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}&remoteip{$remoteip}" );
+	$captcha_success = json_decode($verify);
 
-		// Successful Authentication
-//		if( $captcha_success->success==true ) {
+	// Successful Authentication
+	if( $captcha_success->success==true ) {
 
 			if ( $survey == "Question of the Week" && empty( $department ) ){
-?>
-				<script language=javascript>
-					alert( "Sorry! Something seems to be missing. Please re-submit." );
-					history.go( -1 );
-				</script>
-
-<?php
+					showAlert("Sorry! Something seems to be missing. Please re-submit.")
+					console.log("Department is empty on Question of the day");
 			}
 
             // Form not missing variables - Send email
@@ -340,6 +334,16 @@ if ( $survey != "Report Party Leads" ){
 			}
 //		}
 
+
+function showAlert($message){
+	?>
+		<script language=javascript>
+			alert( <?php echo $message?> );
+			history.go( -1 );
+		</script>
+
+	<?php
+}
 	session_destroy();
 	exit;
 
