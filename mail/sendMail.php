@@ -1,21 +1,29 @@
 <?php
-require 'mailer/PHPMailerAutoload.php';
+$rootDir = $_SERVER['DOCUMENT_ROOT'];
+/*	$mailSend .= "/mail/sendMail.php";
+	require $mailSend;*/
+	$phpmailer = $rootDir . "/mail2/src/PHPMailer.php";
+	require $phpmailer;
+
+	date_default_timezone_set('America/Los_Angeles');
 
 function emailPrepSend($to, $from, $body, $subject, $name='Waterworks Aquatics'){
 
 	$mail = new PHPMailer;
 
-	//$mail->SMTPDebug = 2;
+	
 
-	$mail->isSMTP();                                     	// Set mailer to use SMTP
-	$mail->Host = 'smtp.sendgrid.net';  					// Specify main and backup SMTP servers
+	$mail->isSMTP();   										// Set mailer to use SMTP 
+	$mail->SMTPDebug = 2;    
+	$mail->Host = 'smtp.sendgrid.net';  					// Specify main and backup SMTP servers 
+	$mail->Port = 587;                                    	// TCP port to connect to                     	
 	$mail->SMTPAuth = true;                               	// Enable SMTP authentication
-	$mail->Username = 'apikey';           // SMTP username
+	$mail->Username = 'apikey';           					// SMTP username
 	$mail->Password = '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';                        // SMTP password
 	$mail->SMTPSecure = 'tls';                            	// Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    	// TCP port to connect to
 
-	$mail->setFrom( $from, $name);
+	$mail->setFrom($from, $name);
 
 
 
@@ -43,9 +51,9 @@ function emailPrepSend($to, $from, $body, $subject, $name='Waterworks Aquatics')
 function writeToLog($error){
 
 	$space = "\n";
-	$ext = "_error_log.txt";
-	$log = 'Email'.$ext;
-	$logHandle = fopen("log/$log", 'a') or die ("cannot create log");
+	$docRoot = $_SERVER['DOCUMENT_ROOT'];
+	$log = $docRoot . '/log/Email_Log.txt'
+	$logHandle = logFile($log);
 		$message = "Error: ";
 		fwrite($logHandle, $message);
 		fwrite($logHandle, $error);
@@ -60,6 +68,16 @@ function writeToLog($error){
 		fwrite($logHandle, $space);
 	fclose($logHandle);
 
+}
+
+function logFile($log){
+	$myfile = $log;
+	if (file_exists($myFile)) {
+	  $fh = fopen($myFile, 'a');
+	} else {
+	  $fh = fopen($myFile, 'w');
+	}
+	return $fh;
 }
 
 

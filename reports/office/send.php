@@ -331,7 +331,7 @@ if ( $survey != "Report Party Leads" ){
 				?>
 								<script language=javascript>
 									alert( "We encountered an error with our email server.  However, your document has been saved and submitted to management. We apologize for the inconvenience." );
-									window.location = "http://www.waterworksswim.com/"
+									//window.location = "http://www.waterworksswim.com/"
 								</script>
 
 				<?php
