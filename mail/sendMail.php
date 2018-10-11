@@ -1,4 +1,6 @@
 <?php
+recordToLog("sendMail.php Loaded!");
+
 $rootDir = $_SERVER['DOCUMENT_ROOT'];
 /*	$mailSend .= "/mail/sendMail.php";
 	require $mailSend;*/

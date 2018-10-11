@@ -1,6 +1,9 @@
 <?php
-header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
-header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
+	recordToLog("loaded send.php");
+
+	header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
+	header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
+
 
 	$mailSend = $_SERVER['DOCUMENT_ROOT'];
 	$mailSend .= "/mail/sendMail.php";
@@ -137,23 +140,17 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 	// reCAPTCHA
 	$secret = "6LfW_wMTAAAAAJNvB56K4zfKe-bbeDE6dAzsHuw8";
 	$remoteip = $_SERVER['REMOTE_ADDR'];
-
+	recordToLog("at the reCAPTCHA part!");
 	// Check reCAPTCHA when submitted
 	if( isset( $_POST['g-recaptcha-response'] ) ) {
 	  $response = $_POST['g-recaptcha-response'];
-	  echo '<script>console.log("reCAPTCHA CHECKED!")</script>';
+	  recordToLog("got response from reCAPTCHA");
 	}
 
 	// Failed - reCAPTCHA not checked
 	if( !$response ) {
-		?>
-			<script>
-				alert( "Please check the reCAPTCHA box." );
-				history.go( -1 );
-			</script>
-
-		<?php
-
+		showAlert("Please check the reCAPTCHA box.")
+		recordToLog("didnt check the reCAPTCHA box =/");
 		}
 
 	// Success - reCAPTCHA checked
@@ -163,6 +160,7 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 
 	// Successful Authentication
 	if( $captcha_success->success==true ) {
+		recordToLog("got success from recaptcha procedding to send email");
 
 			if ( $survey == "Question of the Week" && empty( $department ) ){
 					showAlert("Sorry! Something seems to be missing. Please re-submit.")
@@ -344,6 +342,10 @@ function showAlert($message){
 
 	<?php
 }
+function recordToLog($message){
+	echo '<script>console.log("'.$message.'"")</script>';
+}
+
 	session_destroy();
 	exit;
 
