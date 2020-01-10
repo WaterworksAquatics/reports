@@ -22,7 +22,7 @@
 	$train .= ", tim@waterworksswim.com, , ally@waterworksswim.co, cameron@waterworksswim.com, vicky@waterworksswim.com, aaron.l@waterworksswim.com, alex.o@waterworksswim.com, cody@waterworksswim.com, megan.h@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com";
+	$instSr .= "tim@waterworksswim.com, jonsupport@waterworksswim.com, toddsupport@waterworksswim.com";
 
 	//lafit_mgr.php
 	$lafitMgr .= ", tim@waterworksswim.com, ";

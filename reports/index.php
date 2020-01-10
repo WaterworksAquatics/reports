@@ -45,6 +45,8 @@
 					<br>
 					<a href="office/rltn_cent_sup.php">Relationship Center Supervisor</a>
 					<br>
+					<a href="office/prjt_rltn_sup.php">Project/Relationship Supervisor Report</a>
+					<br>
 					<a href="office/mgr.php">General Manager</a>
 					<br>
 					<a href="office/shift_lead_sr.php">Senior Shift Lead</a>
@@ -138,10 +140,10 @@
 					<!--
 					<a href="marketing/lead.php">Marketing Branch Lead</a>
 					<br>
-					-->
+					
 					<a href="marketing/coordinator_sr.php">Senior Marketing Coordinator</a>
-					<br>
-					<a href="marketing/coordinator.php">Marketing Coordinator</a>
+					<br>-->
+					<a href="marketing/coordinator_sr.php">Marketing Coordinator</a>
 				</p>
 				<!-- Maintenance -->
 				<a name="maint"></a>

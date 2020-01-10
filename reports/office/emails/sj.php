@@ -23,28 +23,28 @@
 	$rltnCentSup .= "";
 
 	// shift_lead_sr.php
-	$shiftLeadSr .= ", lia@waterworksswim.com";
+	$shiftLeadSr .= ", lia@waterworksswim.com, lizzy@waterworksswim.com";
 
 	// shift_lead.php
-	$shiftLead .= ", lia@waterworksswim.com, alicia@waterworksswim.com, brad@waterworksswim.com";
+	$shiftLead .= ", lia@waterworksswim.com, alicia@waterworksswim.com, lizzy@waterworksswim.com";
 
 	// train_lead_sr.php
 	$trainLeadSr .= "";
 
 	// train_lead.php
-	$trainLead .= ", lia@waterworksswim.com, alicia@waterworksswim.com, brad@waterworksswim.com";
+	$trainLead .= ", lia@waterworksswim.com, alicia@waterworksswim.com, lizzy@waterworksswim.com";
 
 	// cee_sr.php
-	$ceeSr .= "lia@waterworksswim.com";
+	$ceeSr .= ", lia@waterworksswim.com, lizzy@waterworksswim.com";
 
 	// cee.php
-	$cee .= "lia@waterworksswim.com, alicia@waterworksswim.com, brad@waterworksswim.com";
+	$cee .= ", lia@waterworksswim.com, alicia@waterworksswim.com, lizzy@waterworksswim.com";
 
 	// rltn_spec.php
-	$rltnSpec .= ", brad@waterworksswim.com, lisa@waterworksswim.com";
+	$rltnSpec .= ", david.p@waterworksswim.com";
 
 	// proj_spec.php
-	$projSpec .= ", lisa@waterworksswim.com";
+	$projSpec .= ", david.p@waterworksswim.com";
 
 	// live_chat.php
 	$chat .= "";
@@ -53,14 +53,14 @@
 	$callList .= "";
 
 	// host.php
-	$host .= "lia@waterworksswim.com, brad@waterworksswim.com";
+	$host .= ", lia@waterworksswim.com, lizzy@waterworksswim.com";
 	// Office List ^^^
 
 	// trainee.php
-	$trainee .= ", lia@waterworksswim.com, alicia@waterworksswim.com";
+	$trainee .= ", lia@waterworksswim.com, alicia@waterworksswim.com, betsy@waterworkswim.com, kenneth.t@waterworksswim.com, pamela@waterworksswim.com";
 
 	// scomp.php
-	$scomp .= ", alicia@waterworksswim.com, michelle@waterworksswim.com, brad@waterworksswim.com";
+	$scomp .= ", alicia@waterworksswim.com, michelle@waterworksswim.com";
 
 	// event_host.php
 	$eventHost .= ", lia@waterworksswim.com";

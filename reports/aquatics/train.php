@@ -51,22 +51,26 @@
 							"1. Who did you train today, what day were they on, and in what areas do they need improvement on?",
 							"2. Do you observe or hear of any red flags with the trainees?",
 							"3. Do they need any additional practice with any certain ages, levels, and/or skills?",
-							"4. Was the trainee open to feedback today?",
-							"5. When given the feedback, did the trainee:",
+							"4. Do you think the trainee/trainees would be a good fit for PM or SC classes?",
+							"5. Was the trainee open to feedback today?",
+							"6. When given the feedback, did the trainee:",
 							"&#8226; Implement the change(s)?",
 							"&#8226; Make an excuse?",
 							"&#8226; Say \"okay\" to you, but not change their behavior?",
 							"&#8226; Appear to not understand the feedback?",
-							"6. Did the trainee fail to implement any feedback from previous days of training? Please explain. (Ex.: Aspects of 10-step outline, lesson, structure, communication with parent, etc.)",
-							"7. What expectations did you give the trainee at the end of the day for the next day they are in (please be concise)?",
-							"8. Did they have any concerns/questions about these expectations?",
-							"9. Are there any age/level restrictions we should place on them before they start teaching?",
-							"10. Do you feel this trainee should be labeled as firm or gentle?  If something has changed from a previous report that you have submitted, please explain why.",
-							"11. Did you learn anything new about a family today (FORD)?",
-							"12. Any additional questions and/or concerns you would like to share?"
+							"7. Did the trainee fail to implement any feedback from previous days of training? Please explain. (Ex.: Aspects of 10-step outline, lesson, structure, communication with parent, etc.)",
+							"8. What expectations did you give the trainee at the end of the day for the next day they are in (please be concise)?",
+							"9. Did they have any concerns/questions about these expectations?",
+							"10. Are there any age/level restrictions we should place on them before they start teaching?",
+							"11. Do you feel this trainee should be labeled as firm or gentle?  If something has changed from a previous report that you have submitted, please explain why.",
+							"12. How did the trainee do with wrap ups today? Did they discuss figure
+								goals? Did they incorporate growth tactics? Any other concerns with their
+								parent communication?",
+							"13. Any additional questions and/or concerns you would like to share?"
 						);
 
 						$type = array(
+							4,
 							4,
 							4,
 							4,

@@ -50,8 +50,8 @@
 								/** array( "Question", type ) **/
 								array( "1. Please outline any problems/concerns you encountered today. What did you do to resolve them? If you were unable to, did you direct to a Shift Lead/Manager and follow through to ensure the problem was resolved?", 4 ),
 								array( "2. Who and/or what location do you feel has the most room to improve on the quality of their calls (accurate information, professionalism, customer service given, etc.)?", 4 ),
-								array( "3. Did you encounter any severe red flags with any of the calls? Was appropriate feedback immediately given to the team member? Did you follow back up with the customer(s) to ensure we resolved the situation?", 4 ),
-								array( "4.Were there any team members that did an exceptional job with their phone calls? Was this feedback given to them and their manager?", 4 ),
+								array( "3. Based on the call listening results, have you noticed any trends as a company or within any particular facility?", 4 ),
+								array( "4. Did you encounter any severe red flag calls or exceptionally good calls? Was appropriate feedback given to the team member? Did you follow back up with customer(s), if needed?", 4 ),
 								array( "5. Do you have any additional questions and/or concerns you would like to share?", 4 ),
 						);
 

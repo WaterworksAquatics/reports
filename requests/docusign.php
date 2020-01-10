@@ -1,5 +1,5 @@
 <?php
-
+ header("Location: http://reports.waterworksswim.com/requests/onboarding.php");
 	session_start();
 	session_unset();
 
@@ -73,6 +73,17 @@
 						<div id="facility" class="toggle">
 							<label class="q">*Location(s)</label>
 						</div>
+					</p>
+					<p>
+						<label>*Training Track</label>
+						<br>
+						<select id="track" name="track" required>
+							<option value="">Select a Region</option>
+							<option value="General Instructor">General Instructor</option>
+							<option value="Gym Instructor">Gym Instructor</option>
+							<option value="Learn to Swim Under 3">Learn to Swim/Under 3</option>
+							<option value="Technique">Technique</option>
+						</select>
 					</p>
                          <p class="task">
                               <label class="q">*17 years old or under</label>
@@ -173,9 +184,9 @@
 
 					var id = $(this).children(":selected").attr("id");
 					var OC = [ 'Huntington Beach', 'Irvine', 'Anaheim Hills', 'Yorba Linda' ];
-					var SDC = [ 'Carlsbad', 'Sorrento Valley' ];
-					var LAC = [ 'Culver City', 'Torrance', 'Arcadia', 'Alhambra', 'Rancho Palos Verdes', 'West Covina', 'Pasadena', 'Sierra Madre' ];
-					var NCA = [ '20th Avenue', 'San Jose', 'Brokaw', 'Almaden', 'Sunnyvale', 'Hayward' ];
+					var SDC = [ 'Carlsbad', 'Sorrento Valley', 'Poway', 'Temecula' ];
+					var LAC = [ 'Culver City', 'Torrance', 'Arcadia', 'Alhambra', 'Rancho Palos Verdes', 'West Covina', 'Pasadena', 'Sierra Madre', 'Diamond Bar', 'La Verne' ];
+					var NCA = [ '20th Avenue', 'San Jose', 'Brokaw', 'Almaden', 'Sunnyvale', 'Hayward', 'Blossom Hill' ];
 					var DVR = [ 'Highlands Ranch' ];
 
 					if ( $('#reset').is(':selected') ) {

@@ -41,10 +41,10 @@
 	$cee .= "lia@waterworksswim.com, desiree@waterworksswim.com, jason@waterworksswim.com";
 
 	// rltn_spec.php
-	$rltnSpec .= ", lisa@waterworksswim.com";
+	$rltnSpec .= "lisa@waterworksswim.com";
 
 	// proj_spec.php
-	$projSpec .= ", lisa@waterworksswim.com";
+	$projSpec .= "lisa@waterworksswim.com";
 
 	// live_chat.php
 	$chat .= "";

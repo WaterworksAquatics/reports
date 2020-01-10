@@ -6,7 +6,7 @@
 	session_start();
 	session_unset();
 
-	$survey = "Senior Marketing Coordinator Report";
+	$survey = "Marketing Coordinator Report"; //Renamed per Todd, original name Seniro MArketing Coordinator
 	$_SESSION['survey'] = $survey;
 	$process = "send.php";
 	$_SESSION['email'] = $email;

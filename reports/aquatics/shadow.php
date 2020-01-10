@@ -62,6 +62,7 @@
 						$questions[7] = "8. Did the applicant ask you any questions? Were they curious about the position?";
 						$questions[8] = "9. Did the applicant stay close to you or did they wander to other parts of the pool and/or look at other lessons?";
 						$questions[9] = "10. Additional Comments";
+						$questions[10] = "Did the instructor go into the deep end of the pool? If so, how did they do treading water? Any concerns?";
 
 						$_SESSION["questions"] = $questions;
 						
@@ -82,7 +83,7 @@
 						//Type 14 - # Answer (1-5)
 						
 								   //(0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29)
-						$type = array( 14,  14,  14,  1,  14,  8,  8,  1,  1, 4);
+						$type = array( 14,  14,  14,  1,  14,  8,  8,  1,  1, 4, 4);
 						
 						include "types.php";
 						

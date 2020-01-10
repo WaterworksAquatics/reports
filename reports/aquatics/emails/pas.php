@@ -19,7 +19,7 @@
 	$trainLead .= ", ally@waterworksswim.com, franklin@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, ally@waterworksswim.com, franklin@waterworksswim.com, jhonathan@waterworksswim.com, aly@waterworksswim.com, alice@waterworksswim.com, cameron@waterworksswim.com, vicky@waterworksswim.com, aaron.l@waterworksswim.com, alex.o@waterworksswim.com, cody@waterworksswim.com, megan.h@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, ally@waterworksswim.com, franklin@waterworksswim.com, jhonathan@waterworksswim.com, aly@waterworksswim.com, alice@waterworksswim.com, cameron@waterworksswim.com, vicky@waterworksswim.com, aaron.l@waterworksswim.com, alex.o@waterworksswim.com, cody@waterworksswim.com, megan.h@waterworksswim.com, jussin@waterworksswim.com, daizsa@waterworksswim.com, danny@waterworksswim.com, kyle.g@waterworksswim.com, ricardo@waterworksswim.com";
 
 	//inst_sr.php
 	$instSr .= "ally@waterworksswim.com, franklin@waterworksswim.com";
@@ -49,6 +49,6 @@
 	$trainee .= ", ally@waterworksswim.com, franklin@waterworksswim.com, vicky@waterworksswim.com";
 
 	//maint.php
-	$maint .= ", lawrence@maintenance.waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$maint .= ", lawrence@maintenance.waterworksswim.com, tim@waterworksswim.com";
 
 ?>

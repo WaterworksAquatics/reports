@@ -20,6 +20,7 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
      $phone = $_POST['phone'];
      $position = $_POST['position'];
      $locations = $_POST['locations'];
+     $track = $_POST['track'];
      $under17 = $_POST['under17'];
      $hs = $_POST['hs'];
 	$permit = $_POST['permit'];
@@ -124,6 +125,10 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
                     $body .= 		$location . ", ";
                     }
                     $body .= '</p>
+                    			<p>
+                    			<b>Training Track</b><br />
+                    				'. $track .'
+                    			</p>
                               <p>
 							<b>17 Years Old or Under</b>:
                                    <br>

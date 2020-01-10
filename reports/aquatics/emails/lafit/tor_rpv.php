@@ -16,13 +16,13 @@
 	$mgrQuality .= "";
 
 	//train_lead.php
-	$trainLead .= "ashley.d@waterworksswim.com";
+	$trainLead .= "ashley.d@waterworksswim.com, vinny@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, alice@waterworksswim.com, jeff@waterworksswim.com, cameron@waterworksswim.com, vicky@waterworksswim.com, aaron.l@waterworksswim.com, alex.o@waterworksswim.com, cody@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, alice@waterworksswim.com, jeff@waterworksswim.com, cameron@waterworksswim.com, vicky@waterworksswim.com, aaron.l@waterworksswim.com, alex.o@waterworksswim.com, cody@waterworksswim.com, vinny@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, jeff@waterworksswim.com";
+	$instSr .= "tim@waterworksswim.com, jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, jeff@waterworksswim.com";
 
 	if ( $location == "Culver City" ){
 		$instSr .= ", tim@waterworksswim.com";

@@ -52,7 +52,7 @@
 					var locations = ['20th Avenue'];
 				}
 				else if ( id == "SV" ) {
-					var locations = ['San Jose', 'Sunnyvale', 'Almaden', 'North San Jose']
+					var locations = ['San Jose', 'Sunnyvale', 'Almaden', 'North San Jose', 'Blossom Hill']
 				}
 				else if ( id == "DVR" ) {
 					var locations = ['Highlands Ranch'];

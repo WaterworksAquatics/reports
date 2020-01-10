@@ -27,7 +27,7 @@
 	elseif ($location == "Highlands Ranch"){
 		include ("emails/hr.php");
 	}
-	elseif( $location == "20th Avenue" || $location == "Sunnyvale" || $location == "Hayward" || $location == "North San Jose" || $location == "Almaden" ){
+	elseif( $location == "20th Avenue" || $location == "Sunnyvale" || $location == "Hayward" || $location == "North San Jose" || $location == "Almaden" || $location == "Blossom Hill" ){
 		include( "emails/lafit/norcal.php" );
 	}
 	elseif( $location == "Arcadia" || $location == "Alhambra" ){

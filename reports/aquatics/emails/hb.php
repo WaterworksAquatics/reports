@@ -1,55 +1,55 @@
 <?php
 
 	//dir_train_dev.php
-	$dirTrainDev .= "";
+	$dirTrainDev .= ", jeff@waterworksswim.com";
 
 	//mgr_reg.php
-	$mgrReg .= "";
+	$mgrReg .= ", jeff@waterworksswim.com";
 
 	//mgr.php
-	$mgr .= ", david@waterworksswim.com";
+	$mgr .= ", jeff@waterworksswim.com";
 
 	//mgr_site.php
-	$mgrSite .= ", tim@waterworksswim.com, vanessa@waterworksswim.com";
+	$mgrSite .= ", tim@waterworksswim.com,  jeff@waterworksswim.com";
 
 	//mgr_quality.php
-	$mgrQuality .= ", david@waterworksswim.com";
+	$mgrQuality .= ", jeff@waterworksswim.com";
 
 	//train_lead.php
-	$trainLead .= ", vanessa@waterworksswim.com, david@waterworksswim.com, ashley.d@waterworksswim.com";
+	$trainLead .= ",  david@waterworksswim.com, ashley.d@waterworksswim.com, jeff@waterworksswim.com, vinny@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, trever@waterworksswim.com, kyle.g@waterworksswim.com, david@waterworksswim.com, tori@waterworksswim.com, jeff@waterworksswim.com, ashley.d@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, trever@waterworksswim.com, kyle.g@waterworksswim.com, ashley.d@waterworksswim.com, jeff@waterworksswim.com, vinny@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "vanessa@waterworksswim.com, david@waterworksswim.com, ashley.d@waterworksswim.com";
+	$instSr .= " david@waterworksswim.com, ashley.d@waterworksswim.com, jeff@waterworksswim.com";
 
 	//inst.php
-	$inst .= "trever@waterworksswim.com, david@waterworksswim.com, ashley.d@waterworksswim.com";
+	$inst .= "trever@waterworksswim.com, ashley.d@waterworksswim.com, jeff@waterworksswim.com";
 
 	//deck_guard_sr.php
-	$deckSr .= "david@waterworksswim.com";
+	$deckSr .= "david@waterworksswim.com, jeff@waterworksswim.com";
 
 	//deck_guard.php
-	$deck .= "david@waterworksswim.com";
+	$deck .= "david@waterworksswim.com, jeff@waterworksswim.com";
 
 	//shadow.php
-	$shadow .= "stevisupport@waterworksswim.com";
+	$shadow .= " jeff@waterworksswim.com";
 
 	//play_area.php
-	$playArea .= "";
+	$playArea .= "jeff@waterworksswim.com";
 
 	// eval_deck_guard.php
-	$evalDeck .= ", justinsupport@waterworksswim.com, vanessa@waterworksswim.com, david@waterworksswim.com";
+	$evalDeck .= ", justinsupport@waterworksswim.com,  david@waterworksswim.com, jeff@waterworksswim.com";
 
 	// eval_mock_drown.php
-	$evalMock .= ", justinsupport@waterworksswim.com, vanessa@waterworksswim.com, david@waterworksswim.com";
+	$evalMock .= ", justinsupport@waterworksswim.com,  david@waterworksswim.com, jeff@waterworksswim.com";
 
 	//trainee.php
-	$trainee .= ", kelsey.b@waterworksswim.com, tim@waterworksswim.com, david@waterworksswim.com";
+	$trainee .= ", kelsey.b@waterworksswim.com, tim@waterworksswim.com, jeff@waterworksswim.com";
 
 	//maint.php
-	$maint .= ", lawrence@maintenance.waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$maint .= ", lawrence@maintenance.waterworksswim.com, tim@waterworksswim.com, jeff@waterworksswim.com";
 
 
 ?>

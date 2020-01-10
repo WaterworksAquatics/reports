@@ -16,13 +16,13 @@
 	$mgrQuality .= ", justin@waterworksswim.com";
 
 	//train_lead.php
-	$trainLead .= ", justin@waterworksswim.com";
+	$trainLead .= ", justin@waterworksswim.com, vinny@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, justin@waterworksswim.com, tori@waterworksswim.com, jeff@waterworksswim.com, kyle.g@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, justin@waterworksswim.com, tori@waterworksswim.com, jeff@waterworksswim.com, kyle.g@waterworksswim.com, vinny@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, justin@waterworksswim.com, trever@waterworksswim.com, paul@waterworksswim.com";
+	$instSr .= "tim@waterworksswim.com, jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, justin@waterworksswim.com, trever@waterworksswim.com, paul@waterworksswim.com";
 
 	//lafit_mgr.php
 	$lafitMgr .= ", tim@waterworksswim.com, justin@waterworksswim.com";

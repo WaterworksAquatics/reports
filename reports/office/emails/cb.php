@@ -20,7 +20,7 @@
 	$custRltnsMgr .= "";
 
 	// rltn_cent_sup.php
-	$rltnCentSup .= ", caitlin@waterworksswim.com";
+	$rltnCentSup .= "caitlin@waterworksswim.com";
 
 	// shift_lead_sr.php
 	$shiftLeadSr .= ", caitlin@waterworksswim.com";
@@ -35,16 +35,16 @@
 	$trainLead .= ", caitlin@waterworksswim.com, rebecca.h@waterworksswim.com";
 
 	// cee_sr.php
-	$ceeSr .= "caitlin@waterworksswim.com";
+	$ceeSr .= "caitlin@waterworksswim.com, rebecca.h@waterworksswim.com";
 
 	// cee.php
-	$cee .= "caitlin@waterworksswim.com";
+	$cee .= "caitlin@waterworksswim.com, rebecca.h@waterworksswim.com";
 
 	// rltn_spec.php
-	$rltnSpec .= ", caitlin@waterworksswim.com, lisa@waterworksswim.com";
+	$rltnSpec .= "caitlin@waterworksswim.com, david.p@waterworksswim.com, lisa@waterworksswim.com";
 
 	// proj_spec.php
-	$projSpec .= ", caitlin@waterworksswim.com, lisa@waterworksswim.com";
+	$projSpec .= "caitlin@waterworksswim.com, david.p@waterworksswim.com, lisa@waterworksswim.com";
 
 	// live_chat.php
 	$chat .= "";

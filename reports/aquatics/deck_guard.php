@@ -52,10 +52,12 @@
 							"2. Were there any questions and/or concerns addressed to you by customers on the pool deck? If so, did all of them get answered/resolved?",
 							"3. Did the Deck Guard relieve you from your shift at the appropriate time (if applicable)?",
 							"4. Did you have any problems with communicating with the office today?",
-							"5. Do you have any additional questions and/or concerns you would like to share?"
+							"5. How many times today did you enforce the 10 minute rule?  Any concerns?",
+							"6. Do you have any additional questions and/or concerns you would like to share?"
 						);
 
 						$type = array(
+							4,
 							4,
 							4,
 							4,

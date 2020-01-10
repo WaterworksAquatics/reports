@@ -22,11 +22,14 @@
 	// cust_rltns_mgr.php
 	$custRltnsMgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, kim@waterworksswim.com, lia@waterworksswim.com, tim@waterworksswim.com, alicia@waterworksswim.com";
 
-	// rltn_cent_sup.php
-	$rltnCentSup = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, kim@waterworksswim.com, lia@waterworksswim.com";
+	// rltn_cent_sup.php *Relationship Center Supervisor*
+	$rltnCentSup = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, timsupport@waterworksswim.com, lia@waterworksswim.com";
+
+	// rltn_cent_sup.php *Project/Relationship Supervisor*
+	$prjRltnCentSup = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, kim@waterworksswim.com, lia@waterworksswim.com";
 
 	// mgr.php
-	$mgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, lia@waterworksswim.com";
+	$mgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, lia@waterworksswim.com, timsupport@waterworksswim.com";
 
 	// shift_lead_sr.php
 	$shiftLeadSr = "kim@waterworksswim.com";
@@ -35,10 +38,10 @@
 	$shiftLead = "kim@waterworksswim.com, lia@waterworksswim.com";
 
 	// train_lead_sr.php
-	$trainLeadSr = "kim@waterworksswim.com, kristin@waterworksswim.com, lia@waterworksswim.com";
+	$trainLeadSr = "kim@waterworksswim.com, lia@waterworksswim.com";
 
 	// train_lead.php
-	$trainLead = "kim@waterworksswim.com, kristin@waterworksswim.com";
+	$trainLead = "kim@waterworksswim.com";
 
 	// cee_sr.php
 	$ceeSr = "";
@@ -47,23 +50,23 @@
 	$cee = "";
 
 	// rltn_spec.php
-	$rltnSpec = "kim@waterworksswim.com, lia@waterworksswim.com, kristin@waterworksswim.com, arrlin@waterworksswim.com, lisa@waterworksswim.com";
+	$rltnSpec = "kim@waterworksswim.com, lia@waterworksswim.com, arrlin@waterworksswim.com, lisa@waterworksswim.com";
 
 	// proj_spec.php
 	$projSpec = "kim@waterworksswim.com, lia@waterworksswim.com, arrlin@waterworksswim.com, lisa@waterworksswim.com";
 
 	// live_chat.php
-	$chat = "kim@waterworksswim.com";
+	$chat = "kim@waterworksswim.com, caitlin@waterworksswim.com";
 
 	// call_list.php
-	$callList = "toddsupport@waterworksswim.com, kim@waterworksswim.com, kristin@waterworksswim.com, lia@waterworksswim.com, arrlin@waterworksswim.com";
+	$callList = "toddsupport@waterworksswim.com, kim@waterworksswim.com, lia@waterworksswim.com, arrlin@waterworksswim.com";
 
 	// host.php
 	$host = "";
 	// Office List ^^^
 
 	// trainee.php
-	$trainee = "kim@waterworksswim.com, kristin@waterworksswim.com";
+	$trainee = "kim@waterworksswim.com";
 
 	// scomp.php
 	$scomp = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, cindysupport@waterworksswim.com, tim@waterworksswim.com, kim@waterworksswim.com";
@@ -72,10 +75,10 @@
 	$eventHost = "birthday@waterworksswim.com, kim@waterworksswim.com, birthday@waterworksswim.com";
 
 	// event_coor.php
-	$eventCoor = "toddsupport@waterworksswim.com, kim@waterworksswim.com, anthony@waterworksswim.com";
+	$eventCoor = "toddsupport@waterworksswim.com, kim@waterworksswim.com, kara@waterworksswim.com";
 
 	// event_comm.php
-	$eventComm = "toddsupport@waterworksswim.com, kim@waterworksswim.com, tim@waterworksswim.com, maneesha@waterworksswim.com, nancy@waterworksswim.com";
+	$eventComm = "toddsupport@waterworksswim.com, kim@waterworksswim.com, tim@waterworksswim.com, kara@waterworksswim.com, nancy@waterworksswim.com";
 
 	// acc_mgr.php
 	$accMgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com";

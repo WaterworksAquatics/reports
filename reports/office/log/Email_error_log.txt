@@ -390,3 +390,497 @@ Error: You must provide at least one recipient email address.
 50.247.92.57
 10/07/18 : 16:11:31
 
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/15/18 : 15:48:36
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+10/15/18 : 20:01:49
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/18/18 : 17:01:48
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/19/18 : 19:53:51
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/22/18 : 15:52:24
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/26/18 : 20:09:39
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/27/18 : 18:11:36
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/28/18 : 17:11:04
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/29/18 : 17:19:03
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/30/18 : 19:52:35
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/02/18 : 19:39:59
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+11/06/18 : 18:06:56
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+11/06/18 : 18:06:57
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+11/06/18 : 18:07:14
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/08/18 : 16:59:47
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+11/10/18 : 13:11:10
+
+Error: You must provide at least one recipient email address.
+172.95.139.105
+11/12/18 : 20:05:07
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+50.247.92.57
+11/19/18 : 19:00:39
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/19/18 : 19:56:04
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+11/21/18 : 19:19:41
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+11/30/18 : 17:12:49
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+12/03/18 : 18:19:12
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+12/06/18 : 15:54:02
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+12/08/18 : 13:36:22
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+12/09/18 : 17:10:46
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+12/11/18 : 19:12:52
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+12/13/18 : 19:00:52
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+12/18/18 : 14:37:01
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+12/27/18 : 15:54:29
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/04/19 : 20:04:18
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+01/08/19 : 19:49:55
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/10/19 : 13:17:45
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/11/19 : 20:10:20
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+01/12/19 : 14:42:51
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/13/19 : 16:53:19
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/14/19 : 14:40:57
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/16/19 : 19:49:51
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/17/19 : 18:22:38
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/17/19 : 19:55:51
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/22/19 : 19:44:29
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/22/19 : 19:53:44
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/28/19 : 14:38:15
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+01/30/19 : 19:59:27
+
+Error: You must provide at least one recipient email address.
+50.253.127.197
+01/31/19 : 14:50:43
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+02/04/19 : 18:59:30
+
+Error: The following From address failed: OfficeReports@waterworksswim.com : MAIL FROM command failed,Temporary System Problem.  Try again later (0). d81sm2621735vka.12 - gsmtp
+,421,4.7.0SMTP server error: MAIL FROM command failed Detail: Temporary System Problem.  Try again later (0). d81sm2621735vka.12 - gsmtp
+ SMTP code: 421 Additional SMTP info: 4.7.0SMTP server error: MAIL FROM command failed Detail: Temporary System Problem.  Try again later (0). d81sm2621735vka.12 - gsmtp
+ SMTP code: 421 Additional SMTP info: 4.7.0
+50.247.92.57
+02/06/19 : 18:45:55
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+02/09/19 : 13:38:52
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+02/14/19 : 16:49:14
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+02/26/19 : 18:56:58
+
+Error: You must provide at least one recipient email address.
+47.146.41.162
+03/10/19 : 19:56:14
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+03/21/19 : 19:21:47
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+03/28/19 : 17:58:43
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+03/31/19 : 16:13:06
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+04/01/19 : 20:02:35
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+04/02/19 : 18:04:12
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+04/06/19 : 13:24:09
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+04/06/19 : 17:15:10
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+04/11/19 : 11:56:15
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+04/12/19 : 16:30:01
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+04/15/19 : 12:03:00
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+04/18/19 : 20:35:23
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+04/22/19 : 11:49:43
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+24.176.192.210
+04/25/19 : 14:12:09
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+24.176.192.210
+04/25/19 : 14:12:09
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+04/27/19 : 14:58:05
+
+Error: You must provide at least one recipient email address.
+50.253.127.197
+05/01/19 : 17:09:49
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+05/05/19 : 14:31:33
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+05/06/19 : 11:54:38
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+05/20/19 : 18:00:41
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+05/21/19 : 18:04:48
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+05/26/19 : 15:54:55
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+24.176.192.210
+06/02/19 : 15:54:59
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/03/19 : 19:16:53
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/04/19 : 08:56:15
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/04/19 : 12:23:59
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/04/19 : 17:30:19
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/05/19 : 12:53:54
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/07/19 : 12:26:02
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/07/19 : 19:15:20
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/11/19 : 20:04:53
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+06/18/19 : 18:24:54
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+06/21/19 : 19:32:09
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+06/25/19 : 19:43:36
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+06/28/19 : 15:46:02
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+07/09/19 : 16:43:40
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+07/16/19 : 15:02:09
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+07/16/19 : 20:02:49
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+07/17/19 : 13:53:45
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+07/18/19 : 16:59:44
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+07/21/19 : 16:58:50
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+07/23/19 : 19:58:35
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+07/27/19 : 20:21:52
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+07/27/19 : 20:33:48
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+08/06/19 : 15:35:37
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+08/07/19 : 11:50:49
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+08/08/19 : 16:37:54
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+08/19/19 : 14:25:15
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+50.247.92.57
+08/21/19 : 14:58:21
+
+Error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+50.247.92.57
+08/21/19 : 14:58:28
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+08/27/19 : 19:33:21
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+08/28/19 : 19:47:09
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+08/28/19 : 19:47:11
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+08/31/19 : 11:46:48
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+09/10/19 : 16:57:45
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+09/14/19 : 15:51:29
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+09/29/19 : 16:30:41
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+10/09/19 : 19:10:48
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/10/19 : 18:09:52
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/15/19 : 18:30:11
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+10/15/19 : 18:30:13
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+10/21/19 : 19:26:34
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+10/30/19 : 19:45:51
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+11/04/19 : 19:46:32
+
+Error: The following From address failed: OfficeReports@waterworksswim.com : MAIL FROM command failed,Temporary System Problem.  Try again later (9). j3sm1077308vkl.8 - gsmtp
+,421,4.7.0SMTP server error: MAIL FROM command failed Detail: Temporary System Problem.  Try again later (9). j3sm1077308vkl.8 - gsmtp
+ SMTP code: 421 Additional SMTP info: 4.7.0SMTP server error: MAIL FROM command failed Detail: Temporary System Problem.  Try again later (9). j3sm1077308vkl.8 - gsmtp
+ SMTP code: 421 Additional SMTP info: 4.7.0
+24.176.192.210
+11/08/19 : 19:30:54
+
+Error: You must provide at least one recipient email address.
+50.247.92.57
+11/09/19 : 17:09:29
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+11/15/19 : 14:54:58
+
+Error: You must provide at least one recipient email address.
+98.173.149.82
+11/15/19 : 14:55:01
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/18/19 : 14:27:20
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/21/19 : 19:24:03
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+11/21/19 : 19:24:04
+
+Error: You must provide at least one recipient email address.
+70.167.158.26
+12/08/19 : 08:27:45
+
+Error: You must provide at least one recipient email address.
+24.176.192.210
+12/08/19 : 17:00:59
+

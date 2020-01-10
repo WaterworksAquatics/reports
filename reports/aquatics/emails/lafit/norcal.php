@@ -19,10 +19,10 @@
 	$trainLead .= ", lia@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, lia@waterworksswim.com, sarah@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, lia@waterworksswim.com, sarah@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com, michelle@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, lia@waterworksswim.com, cori@waterworksswim.com";
+	$instSr .= "tim@waterworksswim.com, jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, lia@waterworksswim.com, cori@waterworksswim.com";
 
 	//lafit_mgr.php
 	$lafitMgr .= ", tim@waterworksswim.com, lia@waterworksswim.com, michelle@waterworksswim.com";

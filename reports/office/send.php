@@ -1,24 +1,6 @@
 <?php
-
-function showAlert($message){
-	?>
-		<script language=javascript>
-			alert( <?php echo $message?> );
-			history.go( -1 );
-		</script>
-
-	<?php
-}
-function recordToLog($message){
-	echo '<script>console.log("'.$message.'"")</script>';
-}
-
-
-	recordToLog("loaded send.php");
-
-	header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
-	header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
-
+header( "Cache-Control: no-cache, must-revalidate" ); // HTTP/1.1
+header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 
 	$mailSend = $_SERVER['DOCUMENT_ROOT'];
 	$mailSend .= "/mail/sendMail.php";
@@ -111,27 +93,28 @@ function recordToLog($message){
 	$top = '<html>
 			<body style="max-width: 650px; margin: 0 auto;">
 				<p style="text-align: center; font-weight: bold"><span style="color: #316595;">' . $survey . '</span><br>';
-	if ( $survey != "Report Party Leads" ){
-		$top .=			$location . '<br>';
-	}
-	$top .= $date . ' @ ' . $time .'<br>Name: ' . $name . '<br>';
+if ( $survey != "Report Party Leads" ){
+	$top .=			$location . '<br>';
+}
+	$top .= 			$date . ' @ ' . $time .'<br>
+			 		Name: ' . $name . '<br>';
 
-	// Adds UID to the body of the email
-	if( $survey == "Peer to Peer" ) {
-		$top2 = 'User ID: <b>' .$uid. '</b><br>';
-		if( $_SESSION['dept'] == "O" ) {
-			$top2 .= 'Department: <b>Office</b><br>';
+		// Adds UID to the body of the email
+		if( $survey == "Peer to Peer" ) {
+			$top2 = 'User ID: <b>' .$uid. '</b><br>';
+			if( $_SESSION['dept'] == "O" ) {
+				$top2 .= 'Department: <b>Office</b><br>';
+			}
+			elseif( $_SESSION['dept'] == "A" ) {
+				$top2 .= 'Department:&nbsp; <b>Aquatics</b><br>';
+			}
+			$top = $top . $top2;
 		}
-		elseif( $_SESSION['dept'] == "A" ) {
-			$top2 .= 'Department:&nbsp; <b>Aquatics</b><br>';
+		// Add question of the Week or feedback survey department
+		elseif( in_array( $survey, array( "Question of the Week", "Feedback Survey" ) ) ) {
+			$top2 = '<tr><td colspan="2" style="text-align: center;">Department:&nbsp; <b>' .$department. '</b></td></tr>';
+			$top = $top . $top2;
 		}
-		$top = $top . $top2;
-	}
-	// Add question of the Week or feedback survey department
-	elseif( in_array( $survey, array( "Question of the Week", "Feedback Survey" ) ) ) {
-		$top2 = '<tr><td colspan="2" style="text-align: center;">Department:&nbsp; <b>' .$department. '</b></td></tr>';
-		$top = $top . $top2;
-	}
 
 	$top .= '</p>';
 
@@ -153,33 +136,43 @@ function recordToLog($message){
 	// End compile
 
 	// reCAPTCHA
-	$secret = "6LfW_wMTAAAAAJNvB56K4zfKe-bbeDE6dAzsHuw8";
+	$secret = "6Lc0ZhoTAAAAAAWB5j48fcyEg8G9Q4b70sKzzl4N";
 	$remoteip = $_SERVER['REMOTE_ADDR'];
-	recordToLog("at the reCAPTCHA part!");
+
 	// Check reCAPTCHA when submitted
 	if( isset( $_POST['g-recaptcha-response'] ) ) {
 	  $response = $_POST['g-recaptcha-response'];
-	  recordToLog("got response from reCAPTCHA");
 	}
 
-	// Failed - reCAPTCHA not checked
-	if( !$response ) {
-		showAlert("Please check the reCAPTCHA box.")
-		recordToLog("didnt check the reCAPTCHA box =/");
+		// Failed - reCAPTCHA not checked
+		if( !$response ) {
+?>
+
+			<script>
+				alert( "Please check the reCAPTCHA box." );
+				history.go( -1 );
+			</script>
+
+<?php
+
 		}
 
-	// Success - reCAPTCHA checked
-	// Authenticate reCAPTCHA
-	$verify = file_get_contents( "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}&remoteip{$remoteip}" );
-	$captcha_success = json_decode($verify);
+		// Success - reCAPTCHA checked
+		// Authenticate reCAPTCHA
+		$verify = file_get_contents( "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}&remoteip{$remoteip}" );
+		$captcha_success = json_decode($verify);
 
-	// Successful Authentication
-	if( $captcha_success->success==true ) {
-		recordToLog("got success from recaptcha procedding to send email");
+		// Successful Authentication
+//		if( $captcha_success->success==true ) {
 
 			if ( $survey == "Question of the Week" && empty( $department ) ){
-					showAlert("Sorry! Something seems to be missing. Please re-submit.")
-					console.log("Department is empty on Question of the day");
+?>
+				<script language=javascript>
+					alert( "Sorry! Something seems to be missing. Please re-submit." );
+					history.go( -1 );
+				</script>
+
+<?php
 			}
 
             // Form not missing variables - Send email
@@ -338,7 +331,7 @@ function recordToLog($message){
 				?>
 								<script language=javascript>
 									alert( "We encountered an error with our email server.  However, your document has been saved and submitted to management. We apologize for the inconvenience." );
-									//window.location = "http://www.waterworksswim.com/"
+									window.location = "http://www.waterworksswim.com/"
 								</script>
 
 				<?php
@@ -346,9 +339,6 @@ function recordToLog($message){
 				}
 			}
 //		}
-
-
-
 
 	session_destroy();
 	exit;

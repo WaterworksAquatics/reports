@@ -2,85 +2,85 @@
 
 	// Office List vvv
 	// oper_mgr.php
-	$operMgr .= "";
+	$operMgr .= ", lia@waterworksswim.com";
 
 	// area_exp_mgr.php
-	$areaExpMgr .= "";
+	$areaExpMgr .= ", lia@waterworksswim.com";
 
 	// region_exp_mgr.php
-	$regExpMgr .= "";
+	$regExpMgr .= ", lia@waterworksswim.com";
 
 	// region_qual_mgr.php
-	$regQualMgr .= "";
+	$regQualMgr .= ", lia@waterworksswim.com";
 
 	// exp_mgr.php
-	$expMgr .= ", caitlin@waterworksswim.com";
+	$expMgr .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// cust_rltns_mgr.php
-	$custRltnsMgr .= "";
+	$custRltnsMgr .= ", lia@waterworksswim.com";
 
 	// rltn_cent_sup.php
-	$rltnCentSup .= ", caitlin@waterworksswim.com";
+	$rltnCentSup .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// shift_lead_sr.php
-	$shiftLeadSr .= ", marcos@waterworksswim.com, caitlin@waterworksswim.com";
+	$shiftLeadSr .= ", marcos@waterworksswim.com, caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// shift_lead.php
-	$shiftLead .= ", cris@waterworksswim.com, caitlin@waterworksswim.com";
+	$shiftLead .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// train_lead_sr.php
-	$trainLeadSr .= ", cris@waterworksswim.com";
+	$trainLeadSr .= ",  lia@waterworksswim.com";
 
 	// train_lead.php
-	$trainLead .= ", cris@waterworksswim.com";
+	$trainLead .= ",  lia@waterworksswim.com";
 
 	// cee_sr.php
-	$ceeSr .= "cris@waterworksswim.com, caitlin@waterworksswim.com";
+	$ceeSr .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// cee.php
-	$cee .= "cris@waterworksswim.com, caitlin@waterworksswim.com";
+	$cee .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// rltn_spec.php
-	$rltnSpec .= "caitlin@waterworksswim.com, lisa@waterworksswim.com";
+	$rltnSpec .= ", caitlin@waterworksswim.com, lia@waterworksswim.com, david.p@waterworksswim.com";
 
 	// proj_spec.php
-	$projSpec .= "caitlin@waterworksswim.com, lisa@waterworksswim.com";
+	$projSpec .= ", caitlin@waterworksswim.com, david.p@waterworksswim.com, lia@waterworksswim.com";
 
 	// live_chat.php
-	$chat .= "";
+	$chat .= ", lia@waterworksswim.com, caitlin@waterworksswim.com";
 
 	// call_list.php
-	$callList .= "";
+	$callList .= ", lia@waterworksswim.com, Caitlin@waterworksswim.com, Chaz@waterworksswim.com";
 
 	// host.php
-	$host .= "cris@waterworksswim.com";
+	$host .= ", lia@waterworksswim.com, Caitlin@waterworksswim.com";
 	// Office List ^^^
 
 	// trainee.php
-	$trainee .= ", caitlin@waterworksswim.com";
+	$trainee .= ", caitlin@waterworksswim.com, lia@waterworksswim.com";
 
 	// scomp.php
-	$scomp .= ", kristin@waterworksswim.com, trever@waterworksswim.com";
+	$scomp .= ", trever@waterworksswim.com, lia@waterworksswim.com";
 
 	// event_host.php
-	$eventHost .= "";
+	$eventHost .= ", lia@waterworksswim.com";
 
 	// event_coor.php
-	$eventCoor .= "";
+	$eventCoor .= ", lia@waterworksswim.com";
 
 	// event_comm.php
-	$eventComm .= "";
+	$eventComm .= ", lia@waterworksswim.com";
 
 	// acc_mgr.php
-	$accMgr .= "";
+	$accMgr .= ", lia@waterworksswim.com";
 
 	// acc.php
-	$acc .= "";
+	$acc .= ", lia@waterworksswim.com";
 
 	// emp_exp_admin.php
-	$eea .= ", tim@waterworksswim.com";
+	$eea .= ", tim@waterworksswim.com, lia@waterworksswim.com";
 
 	// emp_exp_assist.php
-	$eeaa .= "";
+	$eeaa .= ", lia@waterworksswim.com";
 
 ?>

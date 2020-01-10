@@ -37,18 +37,18 @@
 	$lafitLead .= "";
 
 	// lafit_inst.php
-	$lafitInst .= "stevisupport@waterworksswim.com";
+	$lafitInst .= "";
 
 	//trainee.php
 	$trainee .= ", tim@waterworksswim.com";
 
 	//shadow.php
-	$shadow .= "stevisupport@waterworksswim.com, tim@waterworksswim.com, ally@waterworksswim.com";
+	$shadow .= "tim@waterworksswim.com, ally@waterworksswim.com";
 
 	//play_area.php
 	$playArea .= "tim@waterworksswim.com, ally@waterworksswim.com";
 
 	//maint.php
-	$maint .= ", lawrence@maintenance.waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com, ashley.d@waterworksswim.com";
+	$maint .= ", lawrence@maintenance.waterworksswim.com, tim@waterworksswim.com, ashley.d@waterworksswim.com";
 
 ?>

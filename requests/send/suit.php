@@ -85,13 +85,13 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 					$to = "cindysupport@waterworksswim.com, kelsey.b@waterworksswim.com";
 
 					if ( in_array( $location, $norcal ) ) {
-						$to .= ", lia@waterworksswim.com, kim.r@waterworksswim.com";
+						$to .= ", Michelle@waterworksswim.com, kim.r@waterworksswim.com";
 					}
 					elseif ( $location == "Highlands Ranch" ) {
-						$to .= ", brooklyn@waterworksswim.com";
+						$to .= ", nancy@waterworksswim.com";
 					}
 					else {
-						$to .= ", brooklyn@waterworksswim.com, nancy@waterworksswim.com";
+						$to .= ", nancy@waterworksswim.com";
 					}
 				}
 

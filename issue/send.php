@@ -120,40 +120,63 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 					}
 					// Normal Submission
 					else{
-						//All Locations
-						$all = "jonsupport@waterworksswim.com";
-
-						if ($location == "Irvine"){
-							$to = $all . ", jeremy@waterworksswim.com";
-							$asana = "x+521255374547802@mail.asana.com";
-						}
-						elseif ($location == "Carlsbad"){
-							$to = $all . ", justinsupport@waterworksswim.com, caitlin@waterworksswim.com";
-							$asana = "x+524314689365027@mail.asana.com";
-						}
-						elseif ($location == "Beverly Hills"){
-							$to = $all . ", stevisupport@waterworksswim.com, ashley.d@waterworksswim.com";
-							$asana = "x+519917898056246@mail.asana.com";
-						}
-						elseif ($location == "Huntington Beach"){
-							$to = $all . ", tim@waterworksswim.com, david@waterworksswim.com";
-							$asana = "x+526979214346308@mail.asana.com";
-						}
-						elseif ($location == "Sierra Madre"){
-							$to = $all . ", ricardo@waterworksswim.com";
-							$asana = "x+519856452939850@mail.asana.com";
-						}
-						elseif ($location == "Pasadena"){
-							$to = $all . ", stevisupport@waterworksswim.com, ally@waterworksswim.com, jason@waterworksswim.com";
-							$asana = "x+519834299162437@mail.asana.com";
-						}
-						elseif ($location == "San Jose"){
-							$to = $all . ", lia@waterworksswim.com, michelle@waterworksswim.com";
-							$asana = "x+524318690961467@mail.asana.com";
-						}
-						elseif ($location == "Highlands Ranch"){
-							$to = $all . ", adam@waterworksswim.com";
-							$asana = "x+524321302705562@mail.asana.com";
+						$allFacs = "victor@waterworksswim.com, lawrence@maintenance.waterworksswim.com, jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, timsupport@waterworksswim.com";
+						switch ($survey) {
+							case 'Maintenance Issue':
+								if ($location == "Irvine"){
+									$processEmail = "x+521255374547802@mail.asana.com";
+								}
+								elseif ($location == "Carlsbad"){
+									$processEmail = "x+524314689365027@mail.asana.com";
+								}
+								elseif ($location == "Beverly Hills"){
+									$processEmail = "x+519917898056246@mail.asana.com";
+								}
+								elseif ($location == "Huntington Beach"){
+									$processEmail = "x+526979214346308@mail.asana.com";
+								}
+								elseif ($location == "Sierra Madre"){
+									$processEmail = "x+519856452939850@mail.asana.com";
+								}
+								elseif ($location == "Pasadena"){
+									$processEmail = "x+519834299162437@mail.asana.com";
+								}
+								elseif ($location == "San Jose"){
+									$processEmail = "x+524318690961467@mail.asana.com";
+								}
+								elseif ($location == "Highlands Ranch"){
+									$processEmail = "x+524321302705562@mail.asana.com";
+								}
+									break;
+							case 'Pool Issue':
+								if ($location == "Irvine"){
+									$processEmail =  $allFacs . ", david@waterworksswim.com";
+								}
+								elseif ($location == "Carlsbad"){
+									$processEmail = $allFacs . ", justin@waterworksswim.com";
+								}
+								elseif ($location == "Beverly Hills"){
+									$processEmail = $allFacs;
+								}
+								elseif ($location == "Huntington Beach"){
+									$processEmail = $allFacs . ", jeff@waterworksswim.com";
+								}
+								elseif ($location == "Sierra Madre"){
+									$processEmail = $allFacs . ", ricardo@waterworksswim.com";
+								}
+								elseif ($location == "Pasadena"){
+									$processEmail = $allFacs . ", ally@waterworksswim.com";
+								}
+								elseif ($location == "San Jose"){
+									$processEmail = $allFacs . ", michelle@waterworksswim.com";
+								}
+								elseif ($location == "Highlands Ranch"){
+									$processEmail = $allFacs . ", david@waterworksswim.com";
+								}
+									break;
+							default:
+								# code...
+								break;
 						}
 					}
 				}
@@ -195,41 +218,11 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 				$body .=		'</p>' .
 							'</body></html>';
 			    $fullName = $Fname . $Lname;
-				$sent = emailPrepSend( $asana, $from, $body, $subject, $fullName );
+
+				$sent = emailPrepSend( $processEmail, $from, $body, $subject, $fullName );
 
 				// Success
 				if( $sent && ( $counter != 1 ) ){
-
-					if ( $survey !== "IT Issue" || ( $survey == "IT Issue" && !empty( $email ) ) ){
-
-						if ( $survey == "IT Issue" ){
-							$subject = "IT Issue Report Confirmation";
-						}
-
-						$body = '<html><body>' .
-									'<p style="text-align: center"><img src="http://images3.waterworksswim.com/images/emaillogo.png"><p>' .
-									'<p style="text-align: center; color: #316595; font-weight: bold">' . $survey . '</p>' .
-									'<table style="margin: 0 auto; width: 350px;">' .
-									'<tr style="height: 30px;"><td style="color: #316595; width: 100px;">Location:</td><td>' .$location. '</td></tr>';
-								if ( !empty( $pool ) ){
-						$body .= 		'<tr style="height: 30px;"><td style="color: #316595; width: 100px;">Pool:</td><td>' .$pool. '</td></tr>';
-								}
-						$body .= 		'<tr style="height: 30px;"><td style="color: #316595; width: 100px;">Submitted by:</td><td> '.$Fname  .' '. $Lname .'</td></tr>' .
-									'<tr style="height: 30px;"><td style="color: #316595; width: 100px;">Issue:</td><td> ' .$message. '</td></tr>' .
-									'</table></body></html>' .
-									'<p style="text-align: center">Submitted on ' .$time. '</p>';
-
-						emailPrepSend( $to, $from, $body, $subject );
-
-					}
-
-					if ( in_array( $name, $test ) ) {
-?>
-						<script language=javascript>
-							alert( "Test submitted to Jonny." );
-						</script>
-<?php
-					}
 
 					echo "<script>window.location = '/confirm_report.php?url=" .$url. "'</script>";
 

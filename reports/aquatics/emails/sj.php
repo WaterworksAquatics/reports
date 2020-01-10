@@ -19,19 +19,19 @@
 	$trainLead .= ", lia@waterworksswim.com, michelle@waterworksswim.com, brad@waterworksswim.com";
 
 	//train.php
-	$train .= ", tim@waterworksswim.com, lia@waterworksswim.com, brad@waterworksswim.com, michelle@waterworksswim.com, samantha.t@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com, cori@waterworksswim.com";
+	$train .= ", tim@waterworksswim.com, lia@waterworksswim.com, michelle@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com, cori@waterworksswim.com, erwin@waterworksswim.com, karla@waterworksswim.com, cedric@waterworksswim.com, abiel@waterworksswim.com, gisselle@waterworksswim.com, abiel@waterworksswim.com,  itzel@waterworksswim.com, deon@waterworksswim.com";
 
 	//inst_sr.php
-	$instSr .= "lia@waterworksswim.com, michelle@waterworksswim.com, sarah@waterworksswim.com";
+	$instSr .= "lia@waterworksswim.com, michelle@waterworksswim.com";
 
 	//inst.php
-	$inst .= "lia@waterworksswim.com, michelle@waterworksswim.com, sarah@waterworksswim.com, brad@waterworksswim.com";
+	$inst .= "lia@waterworksswim.com, michelle@waterworksswim.com, brad@waterworksswim.com";
 
 	//deck_guard_sr.php
 	$deckSr .= "lia@waterworksswim.com, michelle@waterworksswim.com";
 
 	//deck_guard.php
-	$deck .= "lia@waterworksswim.com, michelle@waterworksswim.com, sarah@waterworksswim.com, brad@waterworksswim.com";
+	$deck .= "lia@waterworksswim.com, michelle@waterworksswim.com, brad@waterworksswim.com,";
 
 	//shadow.php
 	$shadow .= "tim@waterworksswim.com, kelsey.b@waterworksswim.com, lia@waterworksswim.com, michelle@waterworksswim.com";
@@ -40,15 +40,15 @@
 	$playArea .= "tim@waterworksswim.com, kelsey.b@waterworksswim.com, lia@waterworksswim.com, michelle@waterworksswim.com";
 
 	// eval_deck_guard.php
-	$evalDeck .= ", lia@waterworksswim.com, michelle@waterworksswim.com, nestor@waterworksswim.com, sarah@waterworksswim.com";
+	$evalDeck .= ", lia@waterworksswim.com, michelle@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com";
 
 	// eval_mock_drown.php
-	$evalMock .= ", lia@waterworksswim.com, michelle@waterworksswim.com, nestor@waterworksswim.com, sarah@waterworksswim.com";
+	$evalMock .= ", lia@waterworksswim.com, michelle@waterworksswim.com, nestor@waterworksswim.com, anabel@waterworksswim.com";
 
 	//trainee.php
 	$trainee .= ", lia@waterworksswim.com, michelle@waterworksswim.com, brad@waterworksswim.com";
 
 	//maint.php
-	$maint .= ", lawrence@maintenance.waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$maint .= ", lawrence@maintenance.waterworksswim.com, tim@waterworksswim.com";
 
 ?>

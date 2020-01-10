@@ -52,7 +52,8 @@
 								array( "2. What did you do today to improve lesson retention and lesson growth? What impact did you see as a result of your actions?", 4 ),
 								array( "3. Are there any instructors or office that need improvement (teaching, wrap ups, first impressions, accurate info, soft skills, etc.)? Were you able to coach them on these improvement areas?", 4 ),
 								array( "4. In what ways did you your team create desired/surprising experiences for our customers? Please provide examples.", 4 ),
-								array( "5. What did you do today to develop upcoming leaders and/or current leaders?", 4 ),
+								array( "5. What training did you give your team today to improve their
+									performance?  Did you notice any of them implementing the training?", 4 ),
 								array( "6. Do you have any suggestions/ideas to improve employee retention and/or to recruit additional talent?", 4 ),
 								array( "7. Do you have any additional questions and/or concerns you would like to share?", 4 )
 						);

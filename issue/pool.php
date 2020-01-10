@@ -1,7 +1,7 @@
 <?php
+	header("Location: http://reports.waterworksswim.com/issue/maint.php");
 
-	session_start();
-	session_unset();
+
 
 	$survey = "Pool Issue";
 	$_SESSION['survey'] = $survey;

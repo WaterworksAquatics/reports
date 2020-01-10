@@ -50,21 +50,13 @@
 						$questions = array(
 								/** array( "Question", type ) **/
 								array( "1. Please outline any problems/concerns you encountered today. What have you done to resolve them? If you are unsure, what are your proposed solutions(s)?", 4 ),
-								array( "2. Did you make sure to address any missed calls, missed productivity goals, and/or missed project deadlines with the team? What opportunities are there to improve upon this?", 4 ),
-								array( "3. Are we up-to-date on all projects listed below? If not, please provide reasons and an action plan to get caught up.", 11 ),
-								array( "<ul style='margin: 0; font-size: 10pt'><li>Instructor Day of Call Outs</li>", 4 ),
-								array( "<li>Instructor Training Schedules (filled for the current/next day)</li>" , 4 ),
-								array( "<li>Instructor Request Offs/Availability Changes/Resignations</li>", 4 ),
-                                        array( "<li>P&Me changes</li>", 4 ),
-                                        array( "<li>No Show Report</li>", 4 ),
-                                        array( "<li>Site Activity</li>", 4 ),
-								array( "<li>Multiple Instructor Report</li>", 4 ),
-								array( "<li>FOL</li>", 4 ),
-								array( "<li>FUP</li>", 4 ),
-								array( "<li>Instructor Stop Lists</li>", 4 ),
-								array( "</ul>", 11 ),
-								array( "4. Who were you able to give praise to today?", 4 ),
-								array( "5. Do you have any additional questions and/or concerns you would like to share?", 4 ),
+								array( "2. Did address all of the missed calls, missed productivity goals, and/or missed project deadlines with the team? What opportunities are there to improve upon this?", 4 ),
+								array( "3. What suggestions do you have for staffing in order to meet the above KPI's?  Are there any specific times or days we can reduce hours?", 4 ),
+								array( "4. What training and development did you provide to the staff today? Be specific.", 4 ),
+								array( "5. In what ways did you increase the morale today? Who were you able to give praise to today?  Be specific.", 4 ),
+								array( "6. Do you have any additional questions and/or concerns you would like to share?", 4 ),
+
+								
 						);
 
 						include "types.php";

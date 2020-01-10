@@ -49,6 +49,6 @@
 	$trainee .= "";
 
 	//maint.php
-	$maint .= ", lawrence@maintenance.waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com, ricardo@waterworksswim.com";
+	$maint .= ", lawrence@maintenance.waterworksswim.com, tim@waterworksswim.com, ricardo@waterworksswim.com";
 
 ?>

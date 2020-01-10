@@ -7,27 +7,27 @@
 
 	// mgr_reg.php
 	// Regional Aquatics Manager
-	$mgrReg = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$mgrReg = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, tim@waterworksswim.com";
 
 	// mgr.php
 	// Aquatics Manager Daily
-	$mgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com";
+	$mgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, ";
 
 	// mgr_site.php
 	// Site Manager
-	$mgrSite = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com";
+	$mgrSite = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
 
 	// mgr_quality.php
 	// Quality Manager Daily
-	$mgrQuality = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$mgrQuality = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, tim@waterworksswim.com, stevisupport@waterworksswim.com";
 
 	// train_lead.php
 	// Lead Trainer Report
-	$trainLead = "";
+	$trainLead = "rebecca.h@waterworksswim.com";
 
 	// train.php
 	// Training Report
-	$train = "stevisupport@waterworksswim.com";
+	$train = "";
 
 	// inst_sr.php
 	// Senior Instructor Daily Report
@@ -39,7 +39,7 @@
 
 	// inst_resign.php
 	// Instructor Resignation Report
-	$instResign = "stevisupport@waterworksswim.com";
+	$instResign = "";
 
 	// deck_guard_sr.php
 	// Senior Deck Guard Report
@@ -51,15 +51,15 @@
 
 	// lafit_mgr.php
 	// LA Fitness/City Sports Manager Report
-	$lafitMgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, stevisupport@waterworksswim.com, tim@waterworksswim.com";
+	$lafitMgr = "jonsupport@waterworksswim.com, toddsupport@waterworksswim.com, tim@waterworksswim.com";
 
 	// lafit_coor_site.php
 	// LA Fitness/City Sports Site Coordinator Report
-	$lafitCoorSite = "tim@waterworksswim.com, stevisupport@waterworksswim.com";
+	$lafitCoorSite = "tim@waterworksswim.com, ";
 
 	// lafit_lead_inst.php
 	// LA Fitness/City Sports Lead Instructor Report
-	$lafitLead = "stevisupport@waterworksswim.com";
+	$lafitLead = "";
 
 	// lafit_inst.php
 	// LA Fitness/City Sports Instructor Daily Report
@@ -68,7 +68,7 @@
 
 	// trainee.php
 	// Aquatics Trainee Survey
-	$trainee = "stevisupport@waterworksswim.com";
+	$trainee = "rebecca.h@waterworksswim.com, stevisupport@waterworksswim.com";
 
 	// shadow.php
 	// First Day Shadow Survey
@@ -92,6 +92,6 @@
 
 	// chemtest.php
 	// Pool Chemistry Report
-	$chem = "victor@waterworksswim.com, lawrence@maintenance.waterworksswim.com";
+	$chem = "victor@waterworksswim.com";
 
 ?>

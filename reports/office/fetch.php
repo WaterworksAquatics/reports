@@ -17,7 +17,7 @@
 	$empHardApp = "toddsupport@waterworksswim.com";
 
 	// Report Party Leads
-	$partyLeads = "birthday@waterworksswim.com, toddsupport@waterworksswim.com, kim@waterworksswim.com, brooklyn@waterworksswim.com";
+	$partyLeads = "birthday@waterworksswim.com, toddsupport@waterworksswim.com, kim@waterworksswim.com, leads@waterworksswim.com";
 
 	if( $survey == "Question of the Week" ) {
 		include( "emails/qweek.php" );
@@ -125,6 +125,9 @@
 			}
 			elseif( $survey == "Relationship Center Supervisor Report" ){
 				$to = $rltnCentSup;
+			}
+			elseif( $survey == "Project/Relationship Supervisor Report" ){
+				$to = $prjRltnCentSup;
 			}
 			elseif( $survey == "General Manager Report" ){
 				$to = $mgr;

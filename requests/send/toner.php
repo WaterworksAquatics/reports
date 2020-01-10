@@ -16,6 +16,7 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 
 	// Specific variables
 	$name = $_POST['name'];
+	$userEmail = $_POST['email'];
 	$location = $_POST['location'];
 	$printer =  $_POST['printer'];
 	$TorD = $_POST['TorD'];
@@ -84,7 +85,7 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 			else {
 
 				// From
-				$from = "IssueReport.IT@waterworksswim.com";
+				$from = $userEmail;
 
 				// Send
 				// Test Submission
@@ -93,7 +94,7 @@ header( "Expires: Mon, 28 Jan 2013 05:00:00 GMT" ); // Date in the past
 				}
 				// Normal Submission
 				else{
-					$to = "x+521522601293637@mail.asana.com";
+					$to = "requests@waterworksaquatics.zendesk.com";
 				}
 
 				$subject = "[$location] $survey";

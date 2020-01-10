@@ -58,10 +58,8 @@
 
 						$questions = array(
 							/** array( "Question", type ) **/
-							array( "1. What is one or more reasons that keep you here at Waterworks?", 15 ),
-							array( "2. What do you look forward to when coming to work?", 15 ),
-							array( "3. How likely are you to leave within the next 24 months?", 15 ),
-							array( "4. What would keep you here longer, if you are thinking of leaving?", 15 ),
+							array( "1. How can I support you to do the best work of your life here at Waterworks?", 15 ),
+							array( "2. Other than your manager, is there any one person or persons that you turn to for wisdom/advice here at Waterworks? Who specifically? How have they supported you?", 15 ),
 							array( "Additional Comments:", 4 )
 						);
 

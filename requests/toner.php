@@ -38,6 +38,11 @@
 							<input type="text" name="name" required/>
 						</p>
 						<p>
+							<label class="q">*Email</label>
+							<br>
+							<input type="email" name="email" required/>
+						</p>
+						<p>
 							<label class="q">*Location</label>
 							<br>
 							<select id="locations" name="location" required>

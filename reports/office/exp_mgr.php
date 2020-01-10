@@ -51,7 +51,8 @@
 								array( "1. Please outline any problems/concerns you encountered today. What have you done to resolve them? If you are unsure, what are your proposed solution(s)?", 4 ),
 								array( "2. In what ways did your team drive our growth tactics and/or improve our retention of families?", 4 ),
 								array( "3. How did your team implement FORD today? Please provide examples.", 4 ),
-								array( "4. What did you do today to improve the performance of your bottom performers? Who were you able to give praise to today?", 4 ),
+								array( "4. What training did you give your team today to improve their
+										performance?  Did you notice any of them implementing the training?", 4 ),
 								array( "5. Do you have any additional questions and/or concerns you would like to share (e.g. staffing levels, facility, etc.)?", 4 ),
 						);
 
